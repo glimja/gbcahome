@@ -23,15 +23,24 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <style>
         .mask {opacity: 0.1;}
-        .page-header {background-position-y: 20%;}
+        .page-header {background-position-y: -100px;}
         .textshadow1 {text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);}
+        .mask-visualimg {animation: mainVisualMove 4s linear 1;}
+        @keyframes mainVisualMove {
+            0% {
+               background-position-y: 0;
+            }
+            100% {
+               background-position-y: -100px;
+            }
+         }
       </style>
    </head>
    <body class="about-us bg-gray-200">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="page-header min-vh-75" style="background-image: url('./assets/img/common/bg4.jpg');" loading="lazy">
+              <div class="page-header min-vh-75 mask-visualimg" style="background-image: url('./assets/img/common/bg4.jpg');" loading="lazy">
                 <span class="mask bg-gradient-dark"></span>
                 <div class="container">
                     <div class="row justify-content-center">
@@ -54,7 +63,7 @@
               </div>
           </div>
          <div class="carousel-item ">
-            <div class="page-header min-vh-75 type1" style="background-image: url('./assets/img/common/bg1.jpg');" loading="lazy">
+            <div class="page-header min-vh-75 mask-visualimg type1" style="background-image: url('./assets/img/common/bg1.jpg');" loading="lazy">
                <span class="mask bg-gradient-dark"></span>
                <div class="container">
                   <div class="row justify-content-center">

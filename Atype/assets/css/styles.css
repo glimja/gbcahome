@@ -60,3 +60,4 @@ p .p {font-size: calc(1rem / 1.15);}
 .card {
   --bs-card-border-radius: 6.75rem;
 }
+.font15 {font-size: 15px; color: #140d1c}
