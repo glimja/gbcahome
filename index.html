@@ -22,10 +22,32 @@
       <link href="./Atype/assets/css/material-kit.css?v=3.0.0" rel="stylesheet" />
       <style>
          .card img {width: 100%;}
+         .page-header {animation: mainVisualMove 200s infinite linear;}
+         @keyframes mainVisualMove {
+            0% {
+               background-image: url('./Atype/assets/img/common/bg4.jpg');
+               background-position-y: 10%;
+            }
+            40% {
+               background-image: url('./Atype/assets/img/common/bg4.jpg');
+               background-position-y: bottom;
+            }
+            50% {
+               background-image: url('./Atype/assets/img/common/bg1.jpg');
+               background-position-y: center;
+            }
+            90% {
+               background-image: url('./Atype/assets/img/common/bg1.jpg');
+               background-position-y: bottom;
+            }
+            100% {
+               background-image: url('./Atype/assets/img/common/bg4.jpg');
+            }
+         }
       </style>
    </head>
    <body>
-      <div class="page-header align-items-start min-height-300 m-3 border-radius-xl" style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');" loading="lazy">
+      <div class="page-header align-items-start min-height-300 m-3 border-radius-xl" loading="lazy">
          <span class="mask bg-gradient-dark opacity-6"></span>
          <div class="container">
             <div class="row">
@@ -39,7 +61,7 @@
       <div class="container text-center mb-7 pb-7">
          <div class="row mt-lg-n7 mt-md-n7 mt-n7 justify-content-center align-items-start">
             <!-- Atype -->
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-delay="100">
                <div class="card">
                   <div class="card-header p-0 position-relative mx-3 mt-n4 z-index-2">
                      <a href="./Atype/atype-img1.html">
@@ -55,12 +77,12 @@
                      </p>
                      <div class="text-center">
                         <button type="button" onclick="location.href='./Atype/atype-img1.html';" class="btn bg-gradient-dark w-100 mt-3 mb-0">Image View</button>
-                        <button type="button" onclick="location.href='./Atype/index.html';" class="btn bg-gradient-success w-100 mt-3 mb-0">html View</button>
+                        <button type="button" onclick="location.href='./Atype/index.html';" class="btn bg-gradient-light w-100 mt-3 mb-0">html View</button>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-delay="200">
                <div class="card">
                   <div class="card-header p-0 position-relative mx-3 mt-n4 z-index-2">
                      <a href="./Atype/atype-img2.html">
@@ -76,13 +98,13 @@
                      </p>
                      <div class="text-center">
                       <button type="button" onclick="location.href='./Atype/atype-img2.html';" class="btn bg-gradient-dark w-100 mt-3 mb-0">Image View</button>
-                      <button type="button" onclick="location.href='./Atype/index2.html';" class="btn bg-gradient-success w-100 mt-3 mb-0">html View</button>
+                      <button type="button" onclick="location.href='./Atype/index2.html';" class="btn bg-gradient-light w-100 mt-3 mb-0">html View</button>
                      </div>
                   </div>
                </div>
             </div>
             <!-- Btype -->
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-delay="300">
                <div class="card">
                   <div class="card-header p-0 position-relative mx-3 mt-n4 z-index-2">
                      <a href="./Btype/btype-img1.html">
@@ -102,7 +124,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-3">
+            <div class="col-3" data-aos="fade-up" data-aos-delay="400">
                <div class="card">
                   <div class="card-header p-0 position-relative mx-3 mt-n4 z-index-2">
                      <a href="./Btype/btype-img2.html">
