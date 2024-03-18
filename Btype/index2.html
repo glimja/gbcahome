@@ -23,6 +23,15 @@
       <link href="assets/css/styles.css" rel="stylesheet">
       <style>
          .hero {padding: 0}
+         .mask-visualimg {animation: mainVisualMove 10s linear 1;}
+         @keyframes mainVisualMove {
+            0% {
+               background-position-y: -100px;
+            }
+            100% {
+               background-position-y: 0;
+            }
+         }
       </style>
    </head>
    <body>
@@ -105,8 +114,8 @@
             </div>
          </div>
          <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-item mask-visualimg " style="background-image: url(./assets/img/common/slide-carousel-1.jpg); background-position: 0 0;"></div>
             <div class="carousel-item mask-visualimg active" style="background-image: url(./assets/img/common/slide-carousel-2.jpg); background-position: 0 0;"></div>
+            <div class="carousel-item mask-visualimg " style="background-image: url(./assets/img/common/slide-carousel-1.jpg); background-position: 0 0;"></div>
             <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
             </a>
