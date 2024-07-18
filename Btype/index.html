@@ -41,8 +41,8 @@
          <div class="info d-flex align-items-center">
             <div class="container">
                <div class="row justify-content-start">
-                  <div class="col-lg-6">
-                     <h2 data-aos="fade-down"><img src="./assets/img/common/slide_txt_1.png" alt="글로벌비즈니스컨설턴트"></h2>
+                  <div class="col-lg-6 visual-wrap">
+                     <h2 data-aos="fade-down title"><img src="./assets/img/common/slide_txt_1.png" alt="글로벌비즈니스컨설턴트"></h2>
                      <p data-aos="fade-up" class="font14">지난 연휴 기간에 메일을 받은게 있는데, 바로 비트윅 슈퍼부스 행사 소식이었습니다. Bitwig은
                       2023년 5월 11일부터 13일까지 FEZ-Center에서 열리는 베를린 기반 무역 박람회인 Superbooth를
                       위해 여러 가지 행사를 바로 비트윅 슈퍼부스 행사 소식이었습니다.</p>
@@ -134,6 +134,7 @@
             <a href="../index.html" class="logo d-flex align-items-center">
                <h1><img src="./assets/img/common/logo_top.png" alt=""></h1>
             </a>
+
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar w-100">
@@ -181,8 +182,8 @@
                         </li>
                       </ul>
                    </div>
-                   <div class="col">
-                      <ul class=" justify-content-end">
+                   <div class="col gnb-r">
+                      <ul class="justify-content-end">
                         <li><a href="contact.html"><i class="fa fa-home me-1"></i>홈</a></li>
                         <li><a href="contact.html"><i class="fa fa-user me-1"></i>회원가입</a></li>
                       </ul>
@@ -253,7 +254,7 @@
                      <a href="https://www.youtube.com/watch?v=BxtJI45LC6o" class="glightbox play-btn"></a>
                   </div>
                   <div class="col-lg-6 content order-last  order-lg-first pt-5">
-                     <h3 class="position-absolute"><img src="./assets/img/common/txt_1.png" alt="01 국제무역 최신동향"></h3>
+                     <h3 class="position-absolute num-title"><img src="./assets/img/common/txt_1.png" alt="01 국제무역 최신동향"></h3>
                      <strong>
                         8월 무역수지 적자가 통계 집계 66년 만에 월간 기준 역대 최대치를통계 집계 66년 만에<br>
                         월간 기준 역대통계 집계 66년 만에 월간 기준 역대통계 집계 66년 만에 월간 기준 역대<br>
@@ -293,7 +294,7 @@
             <div class="container" data-aos="fade-up">
               
                <div class="section-header">
-                  <h2 class="pb-0 mb-0 text-end"><img src="./assets/img/common/txt_2.png" alt="02 포토뉴스"></h2>
+                  <h2 class="pb-0 mb-0 text-end num-title"><img src="./assets/img/common/txt_2.png" alt="02 포토뉴스"></h2>
                </div>
                <div class="row gy-4">
                   <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -403,7 +404,7 @@
                   </div>
                   <div class="col-md-7">
                      <div class="row">
-                        <div class="col-3 text-center"><img src="./assets/img/common/txt_4.png" alt="04 최신 영상 NEWS"></div>
+                        <div class="col-3 text-center num-title"><img src="./assets/img/common/txt_4.png" alt="04 최신 영상 NEWS"></div>
                         <div class="col">
                            <p class="txtcolor4">
                               팜 민 친 베트남 총리가 11일(현지시각) 뉴질랜드 웰링턴의 의회에서
@@ -428,7 +429,7 @@
                   </div>
                   <div class="col-md-7 order-2 order-md-1">
                      <div class="row">
-                        <div class="col-3 text-center"><img src="./assets/img/common/txt_5.png" alt="05 통계관세"></div>
+                        <div class="col-3 text-center num-title"><img src="./assets/img/common/txt_5.png" alt="05 통계관세"></div>
                         <div class="col">
                            <p class="txtcolor5">
                               팜 민 친 베트남 총리가 11일(현지시각) 뉴질랜드 웰링턴의 의회에서
@@ -453,7 +454,7 @@
                   </div>
                   <div class="col-md-7">
                      <div class="row">
-                        <div class="col-3 text-center"><img src="./assets/img/common/txt_6.png" alt="06 기업소식"></div>
+                        <div class="col-3 text-center num-title"><img src="./assets/img/common/txt_6.png" alt="06 기업소식"></div>
                         <div class="col">
                            <p class="txtcolor6">
                               팜 민 친 베트남 총리가 11일(현지시각) 뉴질랜드 웰링턴의 의회에서
@@ -475,11 +476,23 @@
             </div>
          </section>
          <!-- End Features Section -->
-         <section class="pt-0">
-            <div class="text-center">
-               <img src="./assets/img/common/logos.png" alt="대기업 로고">
-            </div>
-         </section>
+
+         <div class="container">
+            <section class="pt-0">
+               <div class="text-center">
+                  <!-- <img src="./assets/img/common/logos.png" alt="대기업 로고"> -->
+                  <div class="swiper logoSwiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#none"><img src="./assets/img/common/logos_1.png" alt="" /></a></div>
+                        <div class="swiper-slide"><a href="#none"><img src="./assets/img/common/logos_2.png" alt="" /></a></div>
+                        <div class="swiper-slide"><a href="#none"><img src="./assets/img/common/logos_3.png" alt="" /></a></div>
+                        <div class="swiper-slide"><a href="#none"><img src="./assets/img/common/logos_4.png" alt="" /></a></div>
+                        <div class="swiper-slide"><a href="#none"><img src="./assets/img/common/logos_5.png" alt="" /></a></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
       </main>
       <!-- End #main -->
       <!-- ======= Footer ======= -->
@@ -539,7 +552,7 @@
          </div>
          <div class="container">
             <div class="copyright">
-               <p class="text-white mb-4 text-sm font-weight-normal">
+               <p class="text-white pb-4 mb-0 text-sm font-weight-normal">
                   All rights reserved. Copyright © <script>
                      document.write(new Date().getFullYear())
                   </script> Global Business Consulting Association Co., LTD</a>.
@@ -547,7 +560,6 @@
             </div>
          </div>
       </footer>
-      <!-- End Footer -->
       <!-- End Footer -->
       <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>
@@ -561,5 +573,33 @@
       <!-- Template Main JS File -->
       <!-- <script src="assets/js/main2.js"></script> -->
       <script src="assets/js/main.js"></script>
+      <script>
+         var swiper = new Swiper(".logoSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
+            },
+            observer: true,
+            observeParents: true,
+            allowTouchMove: true,
+            breakpoints: {
+               640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+               },
+               768: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+               },
+               1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+               },
+            }
+         });
+      </script>
    </body>
 </html>
