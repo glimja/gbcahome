@@ -118,7 +118,7 @@
             <section>
                 <div class="container" data-aos="fade-up">
                     <form class="row g-3">
-                        <div class="col-auto">
+                        <div class="col-md-2 text-center">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>전체</option>
                                 <option value="1">제목</option>
@@ -126,58 +126,88 @@
                                 <option value="3">날짜</option>
                             </select>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-md-5">
                             <label for="searchtxt" class="visually-hidden">검색어를 입력해 주세요</label>
                             <input type="text" class="form-control" id="searchtxt" placeholder="검색어 입력">
                         </div>
-                        <div class="col-auto">
+                        <div class="col-md-auto text-center">
                             <button type="text" class="btn btn-primary mb-3">조회</button>
                         </div>
                     </form>
                     <table class="table table-sm table-hover tbllist">
                         <thead>
                             <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">제목</th>
-                                <th scope="col">내용</th>
-                                <th scope="col">날짜</th>
+                                <th>
+                                    <div class="box row">
+                                        <div class="num col-md-1">No</div>
+                                        <div class="cate col-md-2">분류</div>
+                                        <div class="subject col-md-7">제목</div>
+                                        <div class="info col-md-2">
+                                            <span class="cate">분류</span>
+                                            <span class="date">날짜</span>
+                                        </div>
+                                    </div>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" class="num">1</th>
-                                <td><a href="#none">제목입니다</a></td>
-                                <td><a href="#none">내용입니다</a></td>
-                                <td class="num text-center"><a href="#none">2024.08.15</a></td>
+                                <td>
+                                    <div class="box row">
+                                        <div class="num col-md-1">1</div>
+                                        <div class="cate col-md-2"><span class="badge bg-outline-primary">설명회</span></div>
+                                        <div class="subject col-md-7"><a href="#none">[스타트업글로벌성장실] 8월 1:1 온/오프라인 법률 상담 기업 모집 (무료, 선착순 접수)</a></div>
+                                        <div class="info col-md-2">
+                                            <span class="cate"><span class="badge bg-outline-primary">설명회</span></span>
+                                            <span class="date">2024.08.15</span>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td><a href="#none">제목입니다</a></td>
-                                <td><a href="#none">내용입니다</a></td>
-                                <td class=" text-center"><a href="#none">2024.08.15</a></td>
+                                <td>
+                                    <div class="box row">
+                                        <div class="num col-md-1">1</div>
+                                        <div class="cate col-md-2"><span class="badge bg-outline-warning">설명회</span></div>
+                                        <div class="subject col-md-7"><a href="#none">[스타트업글로벌성장실] 8월 1:1 온/오프라인 법률 상담 기업 모집 (무료, 선착순 접수)</a></div>
+                                        <div class="info col-md-2">
+                                            <span class="cate"><span class="badge bg-outline-warning">설명회</span></span>
+                                            <span class="date">2024.08.15</span>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td><a href="#none">제목입니다</a></td>
-                                <td><a href="#none">내용입니다</a></td>
-                                <td class=" text-center"><a href="#none">2024.08.15</a></td>
+                                <td>
+                                    <div class="box row">
+                                        <div class="num col-md-1">1</div>
+                                        <div class="cate col-md-2"><span class="badge bg-outline-secondary">설명회</span></div>
+                                        <div class="subject col-md-7"><a href="#none">[스타트업글로벌성장실] 8월 1:1 온/오프라인 법률 상담 기업 모집 (무료, 선착순 접수)</a></div>
+                                        <div class="info col-md-2">
+                                            <span class="cate"><span class="badge bg-outline-secondary">설명회</span></span>
+                                            <span class="date">2024.08.15</span>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
+                    
                     <div class="d-flex justify-content-center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
+                        <nav aria-label="Page navigation ">
+                            <ul class="pagination pagination-primary pagination-md m-4">
+                            <!-- <ul class="pagination"> -->
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
                                     </a>
                                 </li>
                             </ul>

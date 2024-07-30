@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    section {padding: 40px 0}
+    .tbllist thead,
+    .tbllist .cate,
+    .tbllist .num {display: none}
+    .tbllist .info .cate {display: block;}
+    .tbllist .box {text-align: left;}
+    .tbllist .info {display: flex; margin-top: 10px; font-size: 14px}
+    .tbllist .info .cate {margin-right: 10px;}
+    .badge {font-size: 13px;}
+}
