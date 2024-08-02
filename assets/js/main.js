@@ -150,3 +150,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+function __fn_chkboxAll(){
+    // 체크박스 전체선택 전체해제
+    $('#chk_all').on('click', function(){
+        // 클릭 되었을때
+        if($('#chk_all').prop('checked')){
+            $("input[name=mycheck]:checkbox").prop("checked", true);    
+        // 클릭 안 되었을때
+        } else{
+            $("input[name=mycheck]:checkbox").prop("checked", false);
+        }
+    });
+}
+__fn_chkboxAll();

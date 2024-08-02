@@ -2,10 +2,14 @@
     section {padding: 40px 0}
     .tbllist thead,
     .tbllist .cate,
-    .tbllist .num {display: none}
-    .tbllist .info .cate {display: block;}
+    .tbldetail .cate,
+    .tbllist .num,
+    .tbldetail .num {display: none}
+    .tbllist .info .cate,
+    .tbldetail .info .cate {display: block; margin-right: 10px;}
     .tbllist .box {text-align: left;}
-    .tbllist .info {display: flex; margin-top: 10px; font-size: 14px}
-    .tbllist .info .cate {margin-right: 10px;}
-    .badge {font-size: 13px;}
+    .tbllist .info,
+    .tbldetail .info {display: flex; margin-top: 10px; font-size: 14px}
+    .tbllist .badge,
+    .tbldetail .badge {font-size: 13px;}
 }
