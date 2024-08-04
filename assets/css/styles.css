@@ -15,8 +15,8 @@
 .hero .info h2 {margin-bottom: 0;}
 .hero {color: #fff}
 .sns_top a {color: #fff}
-.bar_top {display: block; position: absolute; top: 55px; left: 50%; margin-left: -960px; width: 1920px; height: 4px; z-index: 2;}
-.bar_top:before {content:''; display: block; width: 100%; height: 4px; background: url('../img/common/bar_top.png');}
+.bar_top {display: block; position: absolute; top: 55px; left: 50%; margin-left: -960px; width: 1920px; height: 2px; z-index: 2;}
+.bar_top:before {content:''; display: block; width: 100%; height: 2px; background: url('../img/common/bar_top.png');}
 .bar_mid {display: block; position: absolute; top: 78px; left: 50%; margin-left: -960px; width: 1920px; height: 4px; z-index: 2;}
 .bar_mid:before {content:''; display: block; width: 100%; height: 4px; background: url('../img/common/bar_mid.png');}
 .bar_100 {display: block; position: absolute; top: 158px; left: 50%; margin-left: -960px; width: 1920px; height: 4px; z-index: 2;}
@@ -763,3 +763,41 @@ caption {display: none}
 .doneinfo {padding: 20px; margin-top: 20px; background-color: #f8f9fa; border-radius: 10px;}
 .doneinfo ul {margin: 0;}
 .doneinfo li {}
+.breadcrumbs nav {padding: 14px 0; background-color: #2ac8d5;}
+.breadcrumbs nav ol {}
+.breadcrumbs nav ol a,
+.breadcrumbs nav ol li+li {color: #fff; font-weight: bold}
+.breadcrumbs nav ol li+li::before {padding-right: 5px; color: #fff; font-weight: 100;}
+.breadcrumbs nav ol li+li {padding-left: 7px; letter-spacing: -1px;}
+.breadcrumbs nav ol li:first-child {position: relative;}
+.breadcrumbs nav ol li:first-child::before {content:'';position: absolute; left: 0; top: 5px; width: 16px; height:14px; background: url('../img/common/icon_homelocation.png') 0 0 no-repeat; background-size: 100%;}
+.breadcrumbs nav ol li:first-child a {padding-left: 20px;}
+.icon_homeheader {display: inline-block; width: 15px; height:13px; margin-right: 3px; background: url('../img/common/icon_homelocation.png') 0 0 no-repeat; background-size: 100%;}
+.services .card a.stretched-link {font-weight: 700; letter-spacing: -1px;}
+.breadcrumbs .page-header h2 {font-size: 38px}
+.breadcrumbs .page-header:before {background-color: rgba(0, 0, 0, 0.75);}
+.header-subtit {display: inline-block; padding: 7px 40px 3px; margin-bottom: 10px; border: 2px solid #fff; border-radius: 50px; letter-spacing: -2px;}
+.sub_subjecttit {padding-bottom: 50px;font-size: 36px; font-weight: 900; color: #2ac8d4; letter-spacing: -2px;}
+.sub_subjecttit.pink {color: #fc7e74}
+.sitemaplist .row>* {padding-left: 2px; padding-right: 2px;}
+.sitemaplist .tit {padding: 12px 0; margin-bottom: 5px; background: #192b7d; border-radius: 8px; text-align: center; font-size: 18px; font-weight: 900; color: #fff;}
+.sitemaplist ul {padding: 10px 20px; background: #ebebeb; border-radius: 8px;}
+.sitemaplist ul li {list-style: none;}
+.sitemaplist ul li a {display: block; color: #000; font-size: 15px; font-weight: bold; padding: 5px 0;}
+.contenttab {}
+.contenttab .nav-tabs {border: 0;}
+.contenttab .nav-tabs .nav-item {width: 20%; text-align: center; background: #dddcdc; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}
+.contenttab .nav-tabs .nav-item a {color: #b1aeae; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}
+.contenttab .nav-tabs .nav-item.show .nav-link, .contenttab .nav-tabs .nav-link.active {background: #fc7e74; color: #fff; border: 0; border-top-left-radius: 0; border-top-right-radius: 0;}
+.contenttab .nav-tabs .nav-link {}
+.pic_ceo {}
+.greeting {letter-spacing: -1px;}
+.greeting .ceoname {padding-left: 5px;font-size: 22px;}
+.sub_txt1 {}
+.intro2imggap {padding: 50px 0}
+.intro3imggap {padding: 50px 0}
+.mobiledisnone {display: block;}
+.bizlist {padding: 40px 0;}
+.bizlist .tit {padding: 12px 0; margin: 0; background: #2ac8d5; border-top-left-radius: 8px; border-top-right-radius: 8px; text-align: center; font-size: 18px; font-weight: bold; color: #fff;}
+.bizlist ul {padding: 10px 20px; background: #dbd9d8; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;}
+.bizlist ul li {list-style: none;color: #000; font-size: 13px; padding: 2px 0;}

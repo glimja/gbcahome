@@ -12,4 +12,10 @@
     .tbldetail .info {display: flex; margin-top: 10px; font-size: 14px}
     .tbllist .badge,
     .tbldetail .badge {font-size: 13px;}
+    .navbar a, .navbar a:focus {font-size: 19px}
+    .navbar .dropdown-active a, .navbar .dropdown-active a:focus{font-size: 15px; padding: 10px 20px;}
+    .navbar .gnb-r a {font-size: 15px;}
+    .sitemaplist .row>* {padding-right: calc(var(--bs-gutter-x)* .5); padding-left: calc(var(--bs-gutter-x)* .5);}
+    .contenttab .nav-tabs .nav-item {font-size: 11px;}
+    .mobiledisnone {display: none;}
 }
