@@ -777,7 +777,8 @@ caption {display: none}
 .breadcrumbs .page-header h2 {font-size: 38px}
 .breadcrumbs .page-header:before {background-color: rgba(0, 0, 0, 0.75);}
 .header-subtit {display: inline-block; padding: 7px 40px 3px; margin-bottom: 10px; border: 2px solid #fff; border-radius: 50px; letter-spacing: -2px;}
-.sub_subjecttit {padding-bottom: 50px;font-size: 36px; font-weight: 900; color: #2ac8d4; letter-spacing: -2px;}
+.content-subtit {display: inline-block; padding: 8px 20px; color: #fff; font-size: 18px; font-weight: bold; border-radius: 50px; background-color: #33bac5; letter-spacing: -2px;}
+.sub_subjecttit {padding-bottom: 50px;font-size: 36px; font-weight: 900; background-color: #2ac8d4; color: #fff; letter-spacing: -2px;}
 .sub_subjecttit.pink {color: #fc7e74}
 .sitemaplist .row>* {padding-left: 2px; padding-right: 2px;}
 .sitemaplist .tit {padding: 12px 0; margin-bottom: 5px; background: #192b7d; border-radius: 8px; text-align: center; font-size: 18px; font-weight: 900; color: #fff;}
