@@ -807,7 +807,8 @@ caption {display: none}
 .bizlist ul {padding: 10px 20px; background: #dbd9d8; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;}
 .bizlist ul li {list-style: none;color: #000; font-size: 13px; padding: 2px 0;}
 .btn-login,
-.btn-login:hover {background-color: #f06155; color: #fff;}
+.btn-login:hover,
+.btn-login:focus {background-color: #f06155; color: #fff;}
 .txt_login1 {font-size: 15px; color: #555; letter-spacing: -1px;}
 .placehoder_graytxt::placeholder {color: #eee; font-size: 15px;}
 .letterspace-1 {letter-spacing: -1px;}
