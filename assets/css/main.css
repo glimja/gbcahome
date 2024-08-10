@@ -600,10 +600,11 @@ section {
 
 .featured-services .service-item .title {
   font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 20px;
+  margin-bottom: 8px;
+  font-size: 23px;
   color: var(--color-secondary);
   transition: 0.3s;
+  letter-spacing: -2px;
 }
 
 .featured-services .service-item .description {
@@ -661,11 +662,12 @@ section {
 }
 
 .about .content ul h5 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #19335c;
+  letter-spacing: -2px;
 }
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {margin-bottom: .4rem;}
 .about .content ul p {
   font-size: 15px;
 }
@@ -776,10 +778,11 @@ section {
 
 .services .card h3 {
   font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 1px;
   padding: 10px 30px;
   text-transform: uppercase;
+  letter-spacing: -2px;
 }
 
 .services .card a {
@@ -875,7 +878,8 @@ section {
 }
 
 .features .features-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  letter-spacing: .5px;
 }
 
 .features .features-item ul li:last-child {
@@ -2173,3 +2177,5 @@ ul.list_txt li:before {content:''; display: block; width: 3px; height: 3px; back
 .mr40 {margin-right:40px !important;}
 .mr45 {margin-right:45px !important;}
 .mr50 {margin-right:50px !important;}
+
+.maintit4 {font-size: 20px; letter-spacing: -2px; margin-bottom: 4px;}

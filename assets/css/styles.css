@@ -773,7 +773,7 @@ caption {display: none}
 .breadcrumbs nav ol li:first-child::before {content:'';position: absolute; left: 0; top: 5px; width: 16px; height:14px; background: url('../img/common/icon_homelocation.png') 0 0 no-repeat; background-size: 100%;}
 .breadcrumbs nav ol li:first-child a {padding-left: 20px;}
 .icon_homeheader {display: inline-block; width: 15px; height:13px; margin-right: 3px; background: url('../img/common/icon_homelocation.png') 0 0 no-repeat; background-size: 100%;}
-.services .card a.stretched-link {font-weight: 700; letter-spacing: -1px;}
+.services .card a.stretched-link {font-weight: 700;}
 .breadcrumbs .page-header h2 {font-size: 38px}
 .breadcrumbs .page-header:before {background-color: rgba(0, 0, 0, 0.75);}
 .header-subtit {display: inline-block; padding: 7px 40px 3px; margin-bottom: 10px; border: 2px solid #fff; border-radius: 50px; letter-spacing: -2px;}
