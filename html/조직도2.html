@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Welcome GBCA!</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <!-- <link href="../assets/css/main2.css" rel="stylesheet"> -->
+        <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/styles.css" rel="stylesheet">
+        <link href="../assets/css/response.css" rel="stylesheet">
+
+        <style>
+            body, button, input, select, textarea{font-family:'Noto Sans Korean', sans-serif; font-size:14px; font-weight:400; color:#4b4b4b; letter-spacing:-1px; overflow-x:hidden;}
+            /* 본부 조직도 */
+div.organization_wrap li.ministor_wrap::after{ display:block; clear:both; content:"";}
+div.organization_wrap li.vice_ministor_wrap::after { display:block; clear:both; content:"";}
+div.organization_wrap li.bottom_chart::after { display:block; clear:both; content:"";}
+
+div.organization_wrap li.ministor_wrap, div.organization_wrap li.vice_ministor_wrap {text-align: center; display:block; margin-bottom:32px;}
+div.organization_wrap li.ministor_wrap a.ministor { display: block;  border-radius: 50%; width: 258px; padding: 5px 0; line-height: 1.5; font-weight: 600; letter-spacing: 2px; margin:0 auto; background-color: #fff; border: 1px solid #ff8989; color: #ff8989; font-size: 26px;}
+div.organization_wrap li.ministor_wrap a.ministor .inner_circle {display: block;  border-radius: 50%; width: 245px; padding: 87px 0;margin:0 auto; background-color: #fff; border: 16px solid #ff8989; color: #ff8989;}
+div.organization_wrap li.vice_ministor_wrap a.vice_ministor  { display: block;  border-radius: 8px; width: 160px; line-height: 3.5; font-weight: 600; letter-spacing: 2px; margin:0 auto; background-color: #c55050; color: #fff; font-size: 18px;}
+div.organization_wrap ul.office_group {display:block;}
+div.organization_wrap ul.office_group.type1 {width: 82%; margin: 0 auto; margin-top: -50px;}
+div.organization_wrap ul.office_group.type1 > li a.red_circle {margin-top: -48px;}
+div.organization_wrap ul.office_group.type1 > li.type1 {width: 19%;}
+div.organization_wrap ul.office_group.type1 > li.type3 {width: 35%;}
+div.organization_wrap ul.office_group::after { display:block; clear:both; content:"";}
+div.organization_wrap ul.office_group > li { width: 25%; float: left; margin-top: -110px; position:relative;} 
+div.organization_wrap ul.office_group > li a { width: 160px; display: block; text-align: center; background-color: #fff; line-height: 2; border-radius: 8px; border: 1px solid #A2A2A2; margin-top: 0.32px;}
+div.organization_wrap ul.office_group > li a.red_circle {width: 160px; padding: 57px 0; display: block; text-align: center; line-height: 1.5; border-radius: 50%; border: 8px solid #ff8989; background-color: #ffffff; font-size: 20px; font-weight: 600; color: #ff8989}
+/* div.organization_wrap ul.office_group > li a.gray_circle {margin-top: 16px;} */
+div.organization_wrap li.bottom_chart { margin-top:64px; position:relative;}
+
+/* 조직도 라인 */
+div.organization_wrap li.ministor_wrap a.ministor::before { content: ""; background-color: #999; height: 49.0%; padding: 0.1px; position: absolute; z-index: -9999; right: 50%;}
+div.organization_wrap ul.office_group > li.left::before { content: ""; background-color: #999; width: 100%; padding: 0.1px; position: absolute; z-index: -9999; left: 50%; top: 30px;}
+div.organization_wrap ul.office_group > li.left:last-child::before { width: 50%;  z-index: -9999; left: 50%;  top: 17px;}
+div.organization_wrap li.bottom_chart>ul>li>a.bg_red::before {content: ""; background-color: #999; height: 32px; padding: 0.1px; position: absolute; z-index: -9999; left: 50%; top: -32px;}
+div.organization_wrap li.bottom_chart>ul::before { content: ""; background-color: #999; width: 83%; padding: 0.1px; position: absolute; z-index: -9999; left: 4%; top: -32px;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul::after {display:block; clear:both; content:""; background-color: #999; width: 50%; padding: 0.1px; position: absolute; z-index: -9999; right: 14.8%; top: -32px;}
+
+/* 조직도 하단 */
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul {width:100%;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(1) ul { width: 100%; }
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(2) ul { width: 25%; }
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(3) ul { width: 25%; }
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(4) ul {	width: 33.3%; }
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li {display:inline-block;	vertical-align: top; position:relative;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(1) {	width:8%;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(2) {	width:33%;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(3) {	width:33%;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(4) {	width:25%;}
+
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>a.bg_red { display: block;	height: 50px; line-height: 50px;	font-size: 16px;	text-align: center;	background-color: #ce474e;    color: #fff;    border-radius:8px 8px 0 0; }
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul	{	overflow: hidden;	vertical-align: top;	display: block;    float: left;    padding: 0 0.32px 0 0;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul:last-child { padding: 0;}
+
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a {	display: block; border-bottom: none; width: 100%;  height: 50px; line-height: 18px; font-size: 15px; text-align: center;    border: 1px solid #A2A2A2;    background-color: #fff;  border-bottom:none;  letter-spacing: -1px;    color: #424242;    padding-top: 6px;    word-break: keep-all;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li:last-child a {border-bottom:1px solid #A2A2A2; }
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a:hover {background:#ECECEC;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a.red_box	{	margin-top: 0.32px;    color: #fff;    background-color: #4c4c4c;    border: #4c4c4c;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a.wh_box	{	margin-top: 0.32px; height:200px; padding: 82px 0;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a.red_box.bt_letter {	letter-spacing: -2px;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a.red_box:hover {background-color: #646464;}
+
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a+ul li	{	margin-top: 5px;}
+div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:last-child	{	margin-right: 0;}
+
+@media screen and (max-width: 768px) {
+    div.organization_wrap div.center_chart_wrap ul li.right, div.organization_wrap div.center_chart_wrap ul li.left {width: 100%;}
+    /* 450px 이하 조직도*/
+	/* div.organization_wrap li.ministor_wrap a.ministor, div.organization_wrap li.vice_ministor_wrap a.vice_ministor { line-height:3;} */
+	/* div.organization_wrap ul.office_group > li a.red_circle {width:100%;} */
+	div.organization_wrap ul.office_group > li.right { float:right;}
+	div.organization_wrap ul.office_group > li a { width:100%; }
+	div.organization_wrap div.center_chart_wrap ul li.right, div.organization_wrap div.center_chart_wrap ul li.left {width: 100%;}
+	div.organization_wrap ul.office_group > li {margin-top: 1rem;}
+	div.organization_wrap li.vice_ministor_wrap ul.office_group > li:last-child { margin-top:2rem;}
+	div.organization_wrap li.vice_ministor_wrap ul.office_group > li:last-child a {margin-top:0;}
+
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(1), 
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(2), 
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(3), 
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:nth-child(4) {width:100%; margin-bottom: 1rem; margin-top:1rem }
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(1) ul,
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(2) ul,
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(3) ul,
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart .bt_office:nth-child(4) ul {width: 100%; padding:0;}
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart span.br {display:none;}
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a { line-height:50px; padding-top:0;}
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li>ul li a.red_box.bt_letter { letter-spacing:-1px;}
+	
+	div.organization_wrap li.ministor_wrap a.ministor::before { height: 94%;}
+	div.organization_wrap ul.office_group > li.left::before {content:none;}
+	div.organization_wrap li.bottom_chart {margin-top: 2rem;}
+	div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul::after { display:none; }
+	div.organization_wrap li.bottom_chart>ul::before {content:none;}
+	div.organization_wrap li.bottom_chart>ul>li>a.bg_red::before {content:none;}
+	
+	ul.chart.school > li { width: 100%; padding-right: 0; margin-top: 1rem;}
+	
+}
+        </style>
+    </head>
+    <body>
+        <main id="">
+            <!-- Contents -->
+            <section>
+                <div class="container">
+                    <div class="organization_wrap">
+                        <div class="tab_contents active">
+                            <h4 class="hidden">본부 조직도</h4>
+                            <ul class="link_list">
+                                <li><a href="http://www.gov.kr/portal/orgInfo" target="_blank" title="정부 조직도 새창열기"><span>정부 조직도</span> <i class="ri-checkbox-multiple-blank-line"></i></a></li>
+                                <li><a href="/common/files/Download.do?cfIdx=CF01000183&amp;cfGroup=COMMON&amp;cfRename=ea9c20f8-77c0-4257-a69c-47ee9aa0a407.pdf" target="_blank" title="조직도 내려받기"><span>조직도 내려받기</span> <i class="ri-download-line"></i></a></li>
+                            </ul>
+                            <div class="center_chart_wrap">
+                                <ul>
+                                    <li class="ministor_wrap">
+                                        <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000102&amp;page_no=01&amp;group=Y" class="ministor" title="장관 안내 이동"><span class="inner_circle">장관</span></a>
+                                        <ul class="office_group type1">
+                                            <li class="left type1"><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000104&amp;page_no=01&amp;group=Y" class="red_circle" title="정책보좌관 직원 안내 이동">정책보좌관</a></li>
+                                            <li class="left type2">
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000103&amp;page_no=01&amp;group=Y" class="red_circle" title="대변인 직원 안내 이동">대변인</a>
+                                            </li>
+                                            <li class="left type3">
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000103&amp;page_no=01&amp;group=Y" class="red_circle" title="대변인 직원 안내 이동">대변인</a>
+                                            </li>
+                                        </ul>
+                                    </li>				
+                                    <li class="vice_ministor_wrap">
+                                        <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000105&amp;page_no=01&amp;group=Y" class="vice_ministor" title="차관 안내 이동">차관</a>
+                                        <ul class="office_group">
+                                            <li class="left">
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000005877&amp;page_no=01" class="red_circle" title="옴부즈만지원단 직원 안내 이동">옴부즈만지원단</a>
+                                            </li>
+                                            <li class="right">
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000108&amp;page_no=01&amp;group=Y" class="red_circle" title="감사관 안내 이동">감사관</a>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000215&amp;page_no=01" title="감사담당관 직원 안내 이동">감사담당관</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="left">
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000208&amp;page_no=01" class="gray_circle" title="운영지원과 직원 안내 이동">운영지원과</a></li>
+                                            <!-- <li class="right">
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000005989&amp;page_no=01" class="gray_circle" title="비대면경제과 안내 이동">비대면경제과</a>
+                                            </li> -->
+                                        </ul>
+                                    </li>
+                                    <li class="bottom_chart">
+                                        <ul>
+                                        
+                                            <li class="bt_office"><!-- 기획조정실  -->
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000106&amp;page_no=01&amp;group=Y" class="bg_red" title="기획조정실 직원 안내 이동">기획조정실</a>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000130&amp;page_no=01&amp;group=Y" class="red_box" title="정책기획관 직원 안내 이동">정책<span class="br"><br></span>기획관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006022&amp;page_no=01" title="기획혁신담당관 직원 안내 이동">기획혁신<span class="br"><br></span>담당관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006023&amp;page_no=01" title="재정행정담당관 직원 안내 이동">재정행정<span class="br"><br></span>담당관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000876&amp;page_no=01" title="규제개혁 법무담당관 직원 안내 이동">규제개혁<span class="br"><br></span>법무담당관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006025&amp;page_no=01" title="정보화담당관 직원 안내 이동">정보화<span class="br"><br></span>담당관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006026&amp;page_no=01" title="비상재난담당관 직원 안내 이동">비상재난<span class="br"><br></span>담당관</a></li>
+                                                </ul>
+                                            </li>
+                
+                                            <li class="bt_office"><!-- 중소기업정책실  -->
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000111&amp;page_no=01&amp;group=Y" class="bg_red" title="중소기업정책실 직원 안내 이동">중소기업정책실</a>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006080&amp;page_no=01&amp;group=Y" class="red_box" title="중소기업전략기획관 직원 안내 이동">중소기업<span class="br"><br></span>전략기획관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006081&amp;page_no=01" title="전략총괄과 직원 안내 이동">전략<span class="br"><br></span>총괄과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006082&amp;page_no=01" title="전략분석개발과 직원 안내 이동">전략분석<span class="br"><br></span>개발과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006083&amp;page_no=01" title="대외환경대응과 직원 안내 이동">대외환경<span class="br"><br></span>대응과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006084&amp;page_no=01" title="중소기업제도과 직원 안내 이동">중소기업<span class="br"><br></span>제도과</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000136&amp;page_no=01&amp;group=Y" class="red_box" title="글로벌성장정책관 직원 안내 이동">글로벌<span class="br"><br></span>성장정책관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000005861&amp;page_no=01" title="글로벌성장정책과 직원 안내 이동">글로벌<span class="br"><br></span>성장정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000005855&amp;page_no=01" title="기업금융과 직원 안내 이동">기업<span class="br"><br></span>금융과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006075&amp;page_no=01" title="국제통상협력과 직원 안내 이동">국제통상<span class="br"><br></span>협력과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000005859&amp;page_no=01" title="판로정책과 직원 안내 이동">판로<span class="br"><br></span>정책과</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006039&amp;page_no=01&amp;group=Y" class="red_box" title="기술혁신정책관 직원 안내 이동">기술혁신<span class="br"><br></span>정책관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006040&amp;page_no=01" title="기술혁신정책과 직원 안내 이동">기술혁신<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006041&amp;page_no=01" title="디지털혁신과 직원 안내 이동">디지털<span class="br"><br></span>혁신과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006042&amp;page_no=01" title="기술개발과 직원 안내 이동">기술<span class="br"><br></span>개발과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006043&amp;page_no=01" title="기술보호과 직원 안내 이동">기술<span class="br"><br></span>보호과</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000137&amp;page_no=01&amp;group=Y" class="red_box" title="지역기업정책관 직원 안내 이동">지역기업<span class="br"><br></span>정책관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000195&amp;page_no=01" title="지역혁신정책과 직원 안내 이동">지역혁신<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006047&amp;page_no=01" title="제조혁신과 직원 안내 이동">제조<span class="br"><br></span>혁신과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006048&amp;page_no=01" title="기업구조개선과 직원 안내 이동">기업구조<span class="br"><br></span>개선과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006085&amp;page_no=01" title="인력정책과 직원 안내 이동">인력<span class="br"><br></span>정책과</a></li>
+                                                </ul>
+                                            </li>
+                
+                                            <li class="bt_office"><!-- 창업벤처혁신실 -->
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000112&amp;page_no=01&amp;group=Y" class="bg_red" title="창업벤처혁신실 직원 안내 이동">창업벤처혁신실</a>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006054&amp;page_no=01&amp;group=Y" class="red_box" title="창업정책관 직원 안내 이동">창업<span class="br"><br></span>정책관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006055&amp;page_no=01" title="창업정책과 직원 안내 이동">창업<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006079&amp;page_no=01" title="신산업기술창업과 직원 안내 이동">신산업<span class="br"><br></span>기술창업과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006057&amp;page_no=01" title="창업생태계과 직원 안내 이동">창업<span class="br"><br></span>생태계과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006058&amp;page_no=01" title="청년정책과 직원 안내 이동">청년<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006078&amp;page_no=01" title="글로벌창업팀 직원 안내 이동">글로벌<span class="br"><br></span>창업팀</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006050&amp;page_no=01&amp;group=Y" class="red_box" title="벤처정책관 직원 안내 이동">벤처<span class="br"><br></span>정책관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006051&amp;page_no=01" title="벤처정책과 직원안내 이동">벤처<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006052&amp;page_no=01" title="벤처투자과 직원 안내 이동">벤처<span class="br"><br></span>투자과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006053&amp;page_no=01" title="투자관리감독과 직원 안내 이동">투자관리<span class="br"><br></span>감독과</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006060&amp;page_no=01" class="red_box" title="특구혁신기획단 직원 안내 이동">특구혁신<span class="br"><br></span>기획단</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006061&amp;page_no=01" title="특구정책과 직원안내 이동">특구<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006062&amp;page_no=01" title="특구운영과 직원 안내 이동">특구<span class="br"><br></span>운영과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006063&amp;page_no=01" title="특구지원과 직원 안내 이동">특구<span class="br"><br></span>지원과</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006077&amp;page_no=01" class="wh_box" title="창업벤처규제혁신단 직원 안내 이동">창업벤처<span class="br"><br></span>규제혁신단</a></li>
+                                                </ul>
+                                            </li> 
+                
+                                            <li class="bt_office"><!-- 소상공인정책실 -->
+                                                <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000113&amp;page_no=01&amp;group=Y" class="bg_red" title="소상공인정책실 직원 안내 이동">소상공인 정책실</a>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000141&amp;page_no=01&amp;group=Y" class="red_box" title="소상공인정책관 직원 안내 이동">소상공인<span class="br"><br></span>정책관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000005831&amp;page_no=01" title="소상공인정책과 직원 안내 이동">소상공인<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006033&amp;page_no=01" title="디지털 소상공인과 직원 안내 이동">디지털<span class="br"><br></span>소상공인과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006035&amp;page_no=01" title="소상공인 성장촉진과 직원 안내 이동">소상공인<span class="br"><br></span>성장촉진과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000213&amp;page_no=01" title="지역상권과 직원 안내 이동">지역<span class="br"><br></span>상권과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006036&amp;page_no=01" title="전통시장과 직원 안내 이동">전통<span class="br"><br></span>시장과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006076&amp;page_no=01" title="내수활성화추진단 직원 안내 이동">내수활성화<span class="br"><br></span>추진단</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000142&amp;page_no=01&amp;group=Y" class="red_box" title="상생협력정책관 직원 안내 이동">상생협력<span class="br"><br></span>정책관</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000219&amp;page_no=01" title="상생협력정책과 직원 안내 이동">상생협력<span class="br"><br></span>정책과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006032&amp;page_no=01" title="사업영역조정과 직원 안내 이동">사업영역<span class="br"><br></span>조정과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006031&amp;page_no=01" title="불공정거래개선과 직원 안내 이동">불공정거래<span class="br"><br></span>개선과</a></li>
+                                                </ul>
+                                                <ul>  
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006000&amp;page_no=01&amp;group=Y" class="red_box bt_letter" title="소상공인코로나19 회복지원단 직원 안내 이동">소상공인코로나19<span class="br"><br></span>회복지원단</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006001&amp;page_no=01" title="소상공인 손실보상과 직원 안내 이동">소상공인<span class="br"><br></span>손실보상과</a></li>
+                                                    <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000006037&amp;page_no=01" title="소상공인 재도약과 직원 안내 이동">소상공인<span class="br"><br></span>재도약과</a></li>
+                                                </ul>  
+                                            </li>
+                                                
+                                        </ul>
+                                    </li><!-- bottom_chart  -->
+                                    </ul>
+                                </div>
+                            </div>
+                
+                        <div class="tab_contents">
+                            <h4 class="hidden">지방청 조직도</h4>
+                            <ul class="org-step-office">
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/seoul/main.do" target="_blank" title="서울지방중소벤처기업청 홈페이지 새창으로 열기">
+                                            <div class="logo"><img src="/images/np/bg_logo_seoul.png" alt="서울지방중소벤처기업청"></div>
+                                            <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">서울지방중소벤처기업청</span>
+                                            <span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span>
+                                        </a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006030&amp;page_no=02" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005943&amp;page_no=02" title="성장지원과 직원 안내 이동">성장지원과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005954&amp;page_no=02" title="창업벤처과 직원 안내 이동">창업벤처과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005951&amp;page_no=02" title="소상공인과 직원 안내 이동">소상공인과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/busan/main.do" target="_blank" title="부산지방중소벤처기업청 홈페이지 새창으로 열기">
+                                            <div class="logo"><img src="/images/np/bg_logo_busan.png" alt="부산지방중소벤처기업청"></div>
+                                            <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">부산지방중소벤처기업청</span>
+                                            <span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span>
+                                        </a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006029&amp;page_no=02" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005942&amp;page_no=02" title="성장지원과 직원 안내 이동">성장지원과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005955&amp;page_no=02" title="창업벤처과 직원 안내 이동">창업벤처과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005948&amp;page_no=02" title="소상공인과 직원 안내 이동">소상공인과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/daegu/main.do" target="_blank" title="대구지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_daegu.png" alt="대구지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">대구·경북지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006027&amp;page_no=02" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005941&amp;page_no=02" title="성장지원과 직원 안내 이동">성장지원과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005956&amp;page_no=02" title="창업벤처과 직원 안내 이동">창업벤처과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005950&amp;page_no=02" title="소상공인과 직원 안내 이동">소상공인과</a></li>
+                                        <li class="office"><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005914&amp;page_no=02" title="경북북부사무소 직원 안내 이동">경북북부사무소</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/gwangju/main.do" target="_blank" title="광주지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_gwangju.png" alt="광주지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">광주·전남지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006021&amp;page_no=02" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005945&amp;page_no=02" title="성장지원과 직원 안내 이동">성장지원과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005953&amp;page_no=02" title="창업벤처과 직원 안내 이동">창업벤처과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005947&amp;page_no=02" title="소상공인과 직원 안내 이동">소상공인과</a></li>
+                                        <li class="office"><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005915&amp;page_no=02" title="전남동부사무소 직원 안내 이동">전남동부사무소</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/gyeonggi/main.do" target="_blank" title="경기지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_gyeonggi.png" alt="경기지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">경기지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006019&amp;page_no=01" title="지역정책과직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005944&amp;page_no=01" title="성장지원과 직원 안내 이동">성장지원과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005957&amp;page_no=01" title="창업벤처과 직원 안내 이동">창업벤처과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005949&amp;page_no=01" title="소상공인과 직원 안내 이동">소상공인과</a></li>
+                                        <li class="office"><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005843&amp;page_no=01" title="경기북부사무소 직원 안내 이동">경기북부사무소</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/incheon/main.do" target="_blank" title="인천지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_incheon.png" alt="인천지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">인천지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006012&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005963&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/daejeon/main.do" target="_blank" title="대전세종지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_daejeon.png" alt="대전세종지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">대전·세종지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006018&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005983&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/chungnam/main.do" target="_blank" title="충남지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_chungnam.png" alt="충남지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">충남지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006014&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005986&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/ulsan/main.do" target="_blank" title="울산지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_ulsan.png" alt="울산지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">울산지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006017&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005962&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/gangwon/main.do" target="_blank" title="강원지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_gangwon.png" alt="강원지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">강원지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006016&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005958&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                        <li class="office"><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005913&amp;page_no=01" title="강원영동사무소 직원 안내 이동">강원영동사무소</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/chungbuk/main.do" target="_blank" title="충북지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_chungbuk.png" alt="충북지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">충북지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006015&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005961&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/gyeongnam/main.do" target="_blank" title="경남지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_gyeongnam.png" alt="경남지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">경남지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006020&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005959&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <div class="org-wrap-box">
+                                        <a href="https://www.mss.go.kr/site/jeonbuk/main.do" target="_blank" title="전북지방중소벤처기업청 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_logo_jeonbuk.png" alt="전북지방중소벤처기업청"></div>
+                                        <span class="hidden;" style="position: absolute; width: 1px; height: 1px; margin: -1px; border: none; clip: rect(0px, 0px, 0px, 0px); overflow: hidden;">전북지방중소벤처기업청</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <ul class="inner-org">
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000006013&amp;page_no=01" title="지역정책과 직원 안내 이동">지역정책과</a></li>
+                                        <li><a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001695&amp;dept_id=000005960&amp;page_no=01" title="지역혁신과 직원 안내 이동">지역혁신과</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <!-- 지방청조직도끝 -->
+                
+                        <!-- 국립공고 조직도 시작 -->
+                        <div class="tab_contents">
+                            <h4 class="hidden">국립공고 조직도</h4>
+                            
+                            <ul class="chart school">
+                                <li>
+                                    <div class="chart_header">
+                                        <a href="http://school.gyo6.net/gnet" target="_blank" title="구미전자공업고등학교 홈페이지 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_school_logo_gumi.png" alt="구미전자공업고등학교"></div>
+                                        <span class="hidden">구미전자공업고등학교</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <div class="chart_list">
+                                        <ul>
+                                            <li><a href="https://school.gyo6.net/gnet/cm/cntnts/cntntsView.do?mi=10205248&amp;cntntsId=10227221" target="_blank" title="구미전자공업고등학교 홈페이지 교직원소개 새창으로 열기">교직원</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chart_header">
+                                        <a href="http://cmt.or.kr" target="_blank" title="전북기계공업고등학교 새창으로 열기">
+                                        <div class="logo"><img src="/images/np/bg_school_logo_junbuk.png" alt="전북기계공업고등학교"></div>
+                                        <span class="hidden">전북기계공업고등학교</span><span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span></a>
+                                    </div>
+                                    <div class="chart_list">
+                                        <ul>
+                                            <li><a href="https://school.jbedu.kr/cmt/MABACBD/" target="_blank" title="전북기계공업고등학교 홈페이지 교직원소개 새창으로 열기">교직원</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="chart_header">
+                                        <a href="http://school.busanedu.net/bmt-h/main.do" target="_blank" title="부산기계공업고등학교 새창으로 열기">
+                                            <div class="logo"><img src="/images/np/bg_school_logo_busan.png" alt="부산기계공업고등학교"></div>
+                                            <span class="hidden">부산기계공업고등학교</span>
+                                            <span class="text">홈페이지 바로가기 <i class="ri-checkbox-multiple-blank-line"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="chart_list">
+                                        <ul>
+                                            <li><a href="http://school.busanedu.net/bmt-h/jo/jobshare/selectJobShareView.do?mi=605125" target="_blank" title="부산기계공업고등학교 홈페이지 교직원소개 새창으로 열기">교직원</a></li>
+                                        </ul>
+                                    </div> <!-- 국립공고 조직도 끝 -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contents -->
+        </main>
+        <!-- End #main -->
+        <!-- ======= Footer ======= -->
+        <!-- End Footer -->
+        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <div id="preloader"></div>
+        <!-- Vendor JS Files -->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="../assets/vendor/aos/aos.js"></script>
+        <script src="../assets/vendor/php-email-form/validate.js"></script>
+        <script src="../assets/js/jquery-1.12.3.min.js"></script>
+        <!-- Template Main JS File -->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
