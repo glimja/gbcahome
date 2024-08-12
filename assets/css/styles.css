@@ -850,3 +850,4 @@ caption {display: none}
 .iconbox.iconjoin1:before {content:''; position: absolute; left:0; top: 50%; margin-top: -28px; display: block; width: 46px; height: 46px; background: url('../img/common/icon_join1.png') 0 0 no-repeat; background-size: 100%;}
 .iconbox.iconjoin2:before {content:''; position: absolute; left:0; top: 50%; margin-top: -28px; display: block; width: 46px; height: 46px; background: url('../img/common/icon_join2.png') 0 0 no-repeat; background-size: 100%;}
 .infoborder-start {border-left: 1px dashed #dcdcdc;}
+#about .bar_mid_mo {display: none}
