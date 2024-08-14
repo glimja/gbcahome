@@ -851,3 +851,39 @@ caption {display: none}
 .iconbox.iconjoin2:before {content:''; position: absolute; left:0; top: 50%; margin-top: -28px; display: block; width: 46px; height: 46px; background: url('../img/common/icon_join2.png') 0 0 no-repeat; background-size: 100%;}
 .infoborder-start {border-left: 1px dashed #dcdcdc;}
 #about .bar_mid_mo {display: none}
+/* 조직도 */
+.hidden {display: none}
+.organization_wrap {position: relative;}
+.organization_wrap .redcircle {width: 160px; padding: 57px 0; display: block; text-align: center; line-height: 1.5; border-radius: 50%; border: 8px solid #ff8989; background-color: #ffffff; font-size: 20px; font-weight: 600; color: #ff8989}
+.organization_wrap .bluecircle {width: 290px; padding: 90px 0; display: block; text-align: center; line-height: 1.5; border-radius: 50%; border: 16px solid #6282d7; background-color: #ffffff; font-size: 26px; font-weight: 600; color: #6282d7}
+.organization_wrap .chart_top .first { display: block;  border-radius: 50%; width: 258px; padding: 5px 0; line-height: 1.5; font-weight: 600; letter-spacing: 2px; margin:0 auto; background-color: #fff; border: 1px solid #ff8989; color: #ff8989; font-size: 26px;}
+.organization_wrap .chart_top .first .inner_circle {display: block;  border-radius: 50%; width: 245px; padding: 87px 0;margin:0 auto; background-color: #fff; border: 16px solid #ff8989; color: #ff8989;}
+.organization_wrap .chart_top .group {display: flex; justify-content: space-evenly; width: 80%; margin-top: -200px;}
+.organization_wrap .chart_top .group li {display: flex; justify-content: center; width: 25%;}
+.organization_wrap .chart_top .group li.last {justify-content: right; width: 50%;}
+.organization_wrap .group > li {position: relative;}
+.organization_wrap .chart_middle {margin: 100px 0 50px;}
+.organization_wrap .chart_middle > ul {display: flex; justify-content: center;}
+.organization_wrap .chart_middle > ul > li {margin: 0 130px;}
+.organization_wrap .chart_middle > ul .first {display: block; margin-bottom: 20px; padding: 10px 40px; background-color: #6282d7; color: #fff; font-size: 22px; border-radius: 10px; text-align: center;}
+.organization_wrap .chart_middle > ul .group {}
+.organization_wrap .chart_middle > ul .group li {margin-top: 10px;}
+.organization_wrap .chart_middle > ul .group li .graybox {display:block; width: 100%; padding: 5px 50px; background-color: #b2b2b2; color: #fff; font-size: 18px; border-radius: 5px; text-align: center;}
+.organization_wrap .chart_bottom {}
+.organization_wrap .chart_bottom .group {display: flex; justify-content: center;}
+.organization_wrap .chart_bottom .group li {padding: 0 30px}
+/* 조직도 라인 */
+.organization_wrap .chart_top .first::before { content: ""; background-color: #999; height: 70.0%; padding: 0.1px; position: absolute; z-index: -9999; right: 50%;}
+.organization_wrap .chart_bottom .first::before { content: ""; background-color: #999; height: 30.0%; padding: 0.1px; position: absolute; z-index: -9999; right: 50%;}
+.organization_wrap .group > .left::before,
+.organization_wrap .group > .left.last::before { content: ""; background-color: #999; width: 100%; padding: 0.1px; position: absolute; z-index: -9999; left: 65%; top: 50%;}
+.organization_wrap .group > .left:last-child::before { width: 50%;  z-index: -9999; left: 30%;  top: 50%;}
+.organization_wrap .group > .right::before { content: ""; background-color: #999; width: 100%; padding: 0.1px; position: absolute; z-index: -9999; right: 30%; top: 50%;}
+.organization_wrap .chart_middle .group > .left.last::before { content: ""; background-color: #999; width: 100%; padding: 0.1px; position: absolute; z-index: -9999; left: 65%; top: 50%;}
+.organization_wrap .bottom_chart>ul>li>.bg_red::before {content: ""; background-color: #999; height: 32px; padding: 0.1px; position: absolute; z-index: -9999; left: 50%; top: -32px;}
+.organization_wrap .bottom_chart>ul::before { content: ""; background-color: #999; width: 83%; padding: 0.1px; position: absolute; z-index: -9999; left: 4%; top: -32px;}
+.organization_wrap .center_chart_wrap ul .bottom_chart>ul::after {display:block; clear:both; content:""; background-color: #999; width: 50%; padding: 0.1px; position: absolute; z-index: -9999; right: 14.8%; top: -32px;}
+
+.history .year {font-family:"Work Sans"; padding-top: 50px;font-size: 60px; font-weight: 900; letter-spacing: -2px;}
+.history .desc {font-size: 22px; font-weight: 600; letter-spacing: -1px;}
+.intro2imggap .intro2_txt {font-size: 40px; font-weight: 600; color: #fff; position: absolute; top: 50%; margin-top: -30px; left: 50%; margin-left: -310px;}

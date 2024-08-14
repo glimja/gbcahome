@@ -39,4 +39,19 @@
     #features .bar_right_mo:before {content:''; display: block; width: 100%; height: 4px; background: url('../img/common/bar_right.jpg'); position: absolute; top: -4px; left:12px;}
     #features .bar_left_mo:before.type1 {content:''; display: block; width: 100%; height: 4px; background: url('../img/common/bar_left.jpg'); position: absolute; top: -4px; left:0;}
     
+    .organization_wrap .chart_top .group,
+    .organization_wrap .chart_bottom .group,
+    .organization_wrap .chart_middle > ul {flex-direction: column; width: 100%; margin-top: 0;}
+    .organization_wrap .chart_middle {margin: 50px 0;}
+    .organization_wrap .chart_middle > ul > li:first-child {margin-bottom: 50px;}
+    .organization_wrap .chart_top .group li,
+    .organization_wrap .chart_bottom .group li {width:100%; margin-top: 30px;}
+    .organization_wrap .chart_top .group li.last,
+    .organization_wrap .chart_bottom .group li.last {width: 100%; justify-content: center;}
+    .organization_wrap .chart_middle > ul > li {margin: 0 30px}
+    .organization_wrap .group > .left::before,
+    .organization_wrap .group > .left:last-child::before,
+    .organization_wrap .group > .right::before {display: none;}
+ 
+    .intro2imggap .intro2_txt {font-size: 20px; font-weight: 600; color: #fff; position: absolute; top: 50%; margin-top: -15px; left: 50%; margin-left: -160px;}
 }

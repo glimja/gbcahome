@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Welcome GBCA!</title>
+        <title>Welcome </title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <!-- Google Fonts -->
@@ -36,9 +36,10 @@ div.organization_wrap li.ministor_wrap a.ministor .inner_circle {display: block;
 div.organization_wrap li.vice_ministor_wrap a.vice_ministor  { display: block;  border-radius: 8px; width: 160px; line-height: 3.5; font-weight: 600; letter-spacing: 2px; margin:0 auto; background-color: #c55050; color: #fff; font-size: 18px;}
 div.organization_wrap ul.office_group {display:block;}
 div.organization_wrap ul.office_group.type1 {width: 82%; margin: 0 auto; margin-top: -50px;}
-div.organization_wrap ul.office_group.type1 > li a.red_circle {margin-top: -48px;}
+div.organization_wrap ul.office_group.type1 > li .red_circle {margin-top: -48px;}
 div.organization_wrap ul.office_group.type1 > li.type1 {width: 19%;}
-div.organization_wrap ul.office_group.type1 > li.type3 {width: 35%;}
+div.organization_wrap ul.office_group.type1 > li.type3 {width: 15%;}
+div.organization_wrap ul.office_group.type1 > li.type4 {width: 35%;}
 div.organization_wrap ul.office_group::after { display:block; clear:both; content:"";}
 div.organization_wrap ul.office_group > li { width: 25%; float: left; margin-top: -110px; position:relative;} 
 div.organization_wrap ul.office_group > li a { width: 160px; display: block; text-align: center; background-color: #fff; line-height: 2; border-radius: 8px; border: 1px solid #A2A2A2; margin-top: 0.32px;}
@@ -113,7 +114,53 @@ div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:last-child	
 	div.organization_wrap li.bottom_chart>ul>li>a.bg_red::before {content:none;}
 	
 	ul.chart.school > li { width: 100%; padding-right: 0; margin-top: 1rem;}
-	
+
+}
+.hidden {display: none}
+.organization_wrap {position: relative;}
+.organization_wrap .redcircle {width: 160px; padding: 57px 0; display: block; text-align: center; line-height: 1.5; border-radius: 50%; border: 8px solid #ff8989; background-color: #ffffff; font-size: 20px; font-weight: 600; color: #ff8989}
+.organization_wrap .bluecircle {width: 290px; padding: 90px 0; display: block; text-align: center; line-height: 1.5; border-radius: 50%; border: 16px solid #6282d7; background-color: #ffffff; font-size: 26px; font-weight: 600; color: #6282d7}
+.organization_wrap .chart_top .first { display: block;  border-radius: 50%; width: 258px; padding: 5px 0; line-height: 1.5; font-weight: 600; letter-spacing: 2px; margin:0 auto; background-color: #fff; border: 1px solid #ff8989; color: #ff8989; font-size: 26px;}
+.organization_wrap .chart_top .first .inner_circle {display: block;  border-radius: 50%; width: 245px; padding: 87px 0;margin:0 auto; background-color: #fff; border: 16px solid #ff8989; color: #ff8989;}
+.organization_wrap .chart_top .group {display: flex; justify-content: space-evenly; width: 80%; margin-top: -200px;}
+.organization_wrap .chart_top .group li {display: flex; justify-content: center; width: 25%;}
+.organization_wrap .chart_top .group li.last {justify-content: right; width: 50%;}
+.organization_wrap .group > li {position: relative;}
+.organization_wrap .chart_middle {margin: 100px 0 50px;}
+.organization_wrap .chart_middle > ul {display: flex; justify-content: center;}
+.organization_wrap .chart_middle > ul > li {margin: 0 130px;}
+.organization_wrap .chart_middle > ul .first {display: block; margin-bottom: 20px; padding: 10px 40px; background-color: #6282d7; color: #fff; font-size: 22px; border-radius: 10px; text-align: center;}
+.organization_wrap .chart_middle > ul .group {}
+.organization_wrap .chart_middle > ul .group li {margin-top: 10px;}
+.organization_wrap .chart_middle > ul .group li .graybox {display:block; width: 100%; padding: 5px 50px; background-color: #b2b2b2; color: #fff; font-size: 18px; border-radius: 5px; text-align: center;}
+.organization_wrap .chart_bottom {}
+.organization_wrap .chart_bottom .group {display: flex; justify-content: center;}
+.organization_wrap .chart_bottom .group li {padding: 0 30px}
+/* 조직도 라인 */
+.organization_wrap .chart_top .first::before,
+.organization_wrap .chart_bottom .first::before { content: ""; background-color: #999; height: 70.0%; padding: 0.1px; position: absolute; z-index: -9999; right: 50%;}
+.organization_wrap .group > .left::before,
+.organization_wrap .group > .left.last::before { content: ""; background-color: #999; width: 100%; padding: 0.1px; position: absolute; z-index: -9999; left: 63%; top: 50%;}
+.organization_wrap .group > .left:last-child::before { width: 50%;  z-index: -9999; left: 30%;  top: 50%;}
+.organization_wrap .group > .right::before { content: ""; background-color: #999; width: 100%; padding: 0.1px; position: absolute; z-index: -9999; right: 30%; top: 50%;}
+.organization_wrap .chart_middle .group > .left.last::before { content: ""; background-color: #999; width: 100%; padding: 0.1px; position: absolute; z-index: -9999; left: 63%; top: 50%;}
+.organization_wrap .bottom_chart>ul>li>.bg_red::before {content: ""; background-color: #999; height: 32px; padding: 0.1px; position: absolute; z-index: -9999; left: 50%; top: -32px;}
+.organization_wrap .bottom_chart>ul::before { content: ""; background-color: #999; width: 83%; padding: 0.1px; position: absolute; z-index: -9999; left: 4%; top: -32px;}
+.organization_wrap .center_chart_wrap ul .bottom_chart>ul::after {display:block; clear:both; content:""; background-color: #999; width: 50%; padding: 0.1px; position: absolute; z-index: -9999; right: 14.8%; top: -32px;}
+@media screen and (max-width: 768px) {
+    .organization_wrap .chart_top .group,
+    .organization_wrap .chart_bottom .group,
+    .organization_wrap .chart_middle > ul {flex-direction: column; width: 100%; margin-top: 0;}
+    .organization_wrap .chart_middle {margin: 50px 0;}
+    .organization_wrap .chart_middle > ul > li:first-child {margin-bottom: 50px;}
+    .organization_wrap .chart_top .group li,
+    .organization_wrap .chart_bottom .group li {width:100%; margin-top: 30px;}
+    .organization_wrap .chart_top .group li.last,
+    .organization_wrap .chart_bottom .group li.last {width: 100%; justify-content: center;}
+    .organization_wrap .chart_middle > ul > li {margin: 0 30px}
+    .organization_wrap .group > .left::before,
+    .organization_wrap .group > .left:last-child::before,
+    .organization_wrap .group > .right::before {display: none;}
 }
         </style>
     </head>
@@ -123,12 +170,53 @@ div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:last-child	
             <section>
                 <div class="container">
                     <div class="organization_wrap">
+                        <h3 class="hidden">조직도</h3>
+                        <div class="chart_top">
+                            <ul>
+                                <li>
+                                    <span class="first redcircle"><span class="inner_circle">이사장</span></span>
+                                    <ul class="group">
+                                        <li class="left "><span class="redcircle">총&nbsp;&nbsp;&nbsp;회</span></li>
+                                        <li class="left "><span class="redcircle">이사회</span></li>
+                                        <li class="left last"><span class="redcircle">감&nbsp;&nbsp;&nbsp;사</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chart_middle">
+                            <ul>
+                                <li>
+                                    <span class="first">수석부이사장</span>
+                                    <ul class="group">
+                                        <li class="left"><span class="graybox">윤리위원회</span></li>
+                                        <li class="left"><span class="graybox">인사위원회</span></li>
+                                        <li class="left"><span class="graybox">자문위원회</span></li>
+                                        <li class="left last"><span class="graybox">지역위원회</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="first">상근부이사장</span>
+                                    <!-- <ul class="group">
+                                        <li class="right"><span class="graybox">윤리위원회</span></li>
+                                        <li class="right"><span class="graybox">인사위원회</span></li>
+                                        <li class="right"><span class="graybox">자문위원회</span></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chart_bottom">
+                            <span class="first">&nbsp;</span>
+                            <ul class="group">
+                                <li class="left"><span class="bluecircle">대외협력사업<br />본부</span></li>
+                                <li class="left"><span class="bluecircle">교육사업<br />본부</span></li>
+                                <li class="left"><span class="bluecircle">컨설팅사업<br />본부</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="organization_wrap">
                         <div class="tab_contents active">
                             <h4 class="hidden">본부 조직도</h4>
-                            <ul class="link_list">
-                                <li><a href="http://www.gov.kr/portal/orgInfo" target="_blank" title="정부 조직도 새창열기"><span>정부 조직도</span> <i class="ri-checkbox-multiple-blank-line"></i></a></li>
-                                <li><a href="/common/files/Download.do?cfIdx=CF01000183&amp;cfGroup=COMMON&amp;cfRename=ea9c20f8-77c0-4257-a69c-47ee9aa0a407.pdf" target="_blank" title="조직도 내려받기"><span>조직도 내려받기</span> <i class="ri-download-line"></i></a></li>
-                            </ul>
                             <div class="center_chart_wrap">
                                 <ul>
                                     <li class="ministor_wrap">
@@ -138,7 +226,8 @@ div.organization_wrap div.center_chart_wrap ul li.bottom_chart>ul>li:last-child	
                                             <li class="left type2">
                                                 <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000103&amp;page_no=01&amp;group=Y" class="red_circle" title="대변인 직원 안내 이동">대변인</a>
                                             </li>
-                                            <li class="left type3">
+                                            <li class="left type3"><a href="">111</a></li>
+                                            <li class="left type4">
                                                 <a href="/site/smba/ex/organchart/organchart_office.do?mc=usr0001694&amp;dept_id=000000103&amp;page_no=01&amp;group=Y" class="red_circle" title="대변인 직원 안내 이동">대변인</a>
                                             </li>
                                         </ul>
