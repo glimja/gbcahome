@@ -22,6 +22,7 @@
     .contenttab .nav-tabs.type1 .nav-item.show .nav-link, .contenttab .nav-tabs.type1 .nav-link.active {font-size: 11px; height: 49px}
     .mobiledisnone {display: none;}
     .infoborder-start {border: 0; padding-top: 10px;}
+    .pic_ceo {display: none; width: 30%}
 
     #about .bar_mid,
     #service .bar_100,
@@ -58,4 +59,19 @@
     .organization_wrap .rightline::before {display: none;}
  
     .intro2imggap .intro2_txt {font-size: 20px; font-weight: 600; color: #fff; position: absolute; top: 50%; margin-top: -15px; left: 50%; margin-left: -160px;}
+    .wrap_iconmsgsend {padding-top: 5px;text-align: right;}
+    .wrap_iconmsgsend .txt,
+    .infotype2 {padding-top: 5px;}
+
+    .statuscircle {position: relative; width: 110px; height: 110px; margin: 10px 0; padding: 35px 10px; text-align: center; border: 8px solid #bdbdbd; border-radius: 100px; font-size: 15px; font-weight: 600; color: #999}
+    /* .statuscircle.done {color: #192b7d; border-color: #192b7d;}
+    .statuscircle.ing {color: #e73728; border-color: #e73728; font-size: 18px; padding: 28px 10px;}
+    .statuscircle.wait {color: #999; border-color: #bdbdbd;} */
+    .statuscircle.ing {padding: 28px 10px;}
+    .bizstatus {width: 100%;}
+    .bizstatus ul {display: flex;flex-wrap: wrap;}
+    .bizstatus li {position: relative; padding-left: 50px;}
+    .bizstatus li:first-child {padding: 0;}
+    .bizstatus li:first-child::before {display: none;}
+    .bizstatus li::before {content:''; display: block; width: 18px; position: absolute; top: 50%; left: 15px; margin-top: -15px;}
 }
