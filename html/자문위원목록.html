@@ -147,79 +147,150 @@
                             </div>
                         </div>
                     </form>
-                    <table class="table table-sm table-hover tbllist">
-                        <caption>자문위원 목록</caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="row align-items-center">
-                                        <div class="col-md-auto">
-                                            <img class="img_photo1" src="../assets/img/common/img_noimg.png" alt="" />
-                                        </div>
-                                        <div class="col-md-8 text-start">
-                                            <a href="#none">
-                                                <div class="infotype2">
-                                                    <h4 class="name">홍길동<span class="desc">(전문직업인)</span></h4>
-                                                    <ul class="items">
-                                                        <li><strong>소속</strong> : <span class="desc">탑벨정보</span></li>
-                                                        <li><strong>직업</strong> : <span class="desc">프로그래머</span></li>
-                                                        <li><strong>전문분야</strong> : <span class="desc">정보</span></li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-auto">
-                                            <a href="#none"><div class="wrap_iconmsgsend"><img class="icon_msgsend" src="../assets/img/common/icon_messagesend2.png" alt="" /><div class="txt">메시지 보내기</div></div></a>
-                                        </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="accordion dbinfoarea" id="accordionArea">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        전문분야
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionArea">
+                                    <div class="accordion-body">
+                                        <ul class="searchoptionwrap">
+                                            <li><button type="button" class="searchoption">전문경영인 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">경영 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">경영 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">경영 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">경영 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">경영 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">경영 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">경영 <span class="badge numtype">3,222</span></button></li>
+                                        </ul>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="row align-items-center">
-                                        <div class="col-md-auto">
-                                            <img class="img_photo1" src="../assets/img/common/img_photo1.png" alt="" />
-                                        </div>
-                                        <div class="col-md-8 text-start">
-                                            <a href="#none">
-                                                <div class="infotype2">
-                                                    <h4 class="name">김철수<span class="desc">(기관/단체)</span></h4>
-                                                    <ul class="items">
-                                                        <li><strong>소속</strong> : <span class="desc">서울대학교</span></li>
-                                                        <li><strong>직업</strong> : <span class="desc">교수</span></li>
-                                                        <li><strong>전문분야</strong> : <span class="desc">과학, 외교, 정보, 정치</span></li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-auto">
-                                            <a href="#none"><div class="wrap_iconmsgsend"><img class="icon_msgsend" src="../assets/img/common/icon_messagesend2.png" alt="" /><div class="txt">메시지 보내기</div></div></a>
-                                        </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        활동지역
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionArea">
+                                    <div class="accordion-body">
+                                        <ul class="searchoptionwrap">
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">서울특별시 <span class="badge numtype">3,222</span></button></li>
+                                        </ul>
                                     </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <div class="d-flex justify-content-center">
-                        <nav aria-label="Page navigation ">
-                            <ul class="pagination pagination-primary pagination-md m-4">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        그룹
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionArea">
+                                    <div class="accordion-body">
+                                        <ul class="searchoptionwrap">
+                                            <li><button type="button" class="searchoption">기관/단체<span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">기관/단체<span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">기관/단체<span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">기관/단체<span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">기관/단체<span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">기관/단체<span class="badge numtype">3,222</span></button></li>
+                                            <li><button type="button" class="searchoption">기관/단체<span class="badge numtype">3,222</span></button></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <table class="table table-sm table-hover tbllist">
+                                <caption>자문위원 목록</caption>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="row align-items-center">
+                                                <div class="col-md-auto">
+                                                    <img class="img_photo1" src="../assets/img/common/img_noimg.png" alt="" />
+                                                </div>
+                                                <div class="col-md-8 text-start">
+                                                    <a href="#none">
+                                                        <div class="infotype2">
+                                                            <h4 class="name">홍길동<span class="desc">(전문직업인)</span></h4>
+                                                            <ul class="items">
+                                                                <li><strong>소속</strong> : <span class="desc">탑벨정보</span></li>
+                                                                <li><strong>직업</strong> : <span class="desc">프로그래머</span></li>
+                                                                <li><strong>전문분야</strong> : <span class="desc">정보</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <a href="#none"><div class="wrap_iconmsgsend"><img class="icon_msgsend" src="../assets/img/common/icon_messagesend2.png" alt="" /><div class="txt">메시지 보내기</div></div></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="row align-items-center">
+                                                <div class="col-md-auto">
+                                                    <img class="img_photo1" src="../assets/img/common/img_photo1.png" alt="" />
+                                                </div>
+                                                <div class="col-md-8 text-start">
+                                                    <a href="#none">
+                                                        <div class="infotype2">
+                                                            <h4 class="name">김철수<span class="desc">(기관/단체)</span></h4>
+                                                            <ul class="items">
+                                                                <li><strong>소속</strong> : <span class="desc">서울대학교</span></li>
+                                                                <li><strong>직업</strong> : <span class="desc">교수</span></li>
+                                                                <li><strong>전문분야</strong> : <span class="desc">과학, 외교, 정보, 정치</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <a href="#none"><div class="wrap_iconmsgsend"><img class="icon_msgsend" src="../assets/img/common/icon_messagesend2.png" alt="" /><div class="txt">메시지 보내기</div></div></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <div class="d-flex justify-content-center">
+                                <nav aria-label="Page navigation ">
+                                    <ul class="pagination pagination-primary pagination-md m-4">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
             </section>
             <!-- End Contents -->
