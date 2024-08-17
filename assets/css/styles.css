@@ -918,3 +918,8 @@ caption {display: none}
 .bizstatus li:first-child {padding: 0;}
 .bizstatus li:first-child::before {display: none;}
 .bizstatus li::before {content:''; display: block; width: 27px; height: 46px; background: url("../img/common/icon_statusarrow.png") 0 0 no-repeat; background-size: 100%; opacity: .2; position: absolute; top: 50%; left: 30px; margin-top: -23px;}
+
+.terms {}
+.terms h4 {padding: 60px 0 0px;}
+.terms h5 {padding: 30px 0 5px;}
+.terms ol, .terms ul {padding-left: 20px;}
