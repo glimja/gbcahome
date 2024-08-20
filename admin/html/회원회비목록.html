@@ -426,18 +426,18 @@
                           <div class="col-md-10">
                               <div class="row g-3 d-flex justify-content-end">
                                   <div class="col-md-3 text-center">
-                                      <select class="form-select" aria-label="Default select example">
-                                          <option selected>전문분야</option>
-                                          <option value="1">-</option>
-                                      </select>
+                                    <input type="text" id="startDate" class="form_01 openDatePicker ih40 w70" value="" placeholder="" />
                                   </div>
                                   <div class="col-md-3 text-center">
-                                      <select class="form-select" aria-label="Default select example">
-                                          <option selected>이름</option>
-                                          <option value="1">-</option>
-                                      </select>
+                                    <input type="text" id="endDate" class="form_01 openDatePicker ih40 w70" value="" placeholder="" />
                                   </div>
-                                  <div class="col-md-4">
+                                  <div class="col-md-2 text-center">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>이름</option>
+                                        <option value="1">-</option>
+                                    </select>
+                                </div>
+                                  <div class="col-md-2">
                                       <label for="searchtxt" class="visually-hidden">이름을 입력해 주세요</label>
                                       <input type="text" class="form-control" id="searchtxt" placeholder="이름을 입력해 주세요" />
                                   </div>
@@ -596,12 +596,15 @@
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
 
-    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <!-- <script src="../assets/vendor/libs/jquery/jquery.js"></script> -->
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="../assets/vendor/js/menu.js"></script>
 
+    <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script src="../assets/js/jquery-ui.min.js" type="text/javascript"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
@@ -610,8 +613,10 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
+    <script src="../assets/js/common.js"></script>
 
     <!-- Place this tag before closing body tag for github widget button. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
   </body>
 </html>
