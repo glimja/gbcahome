@@ -618,5 +618,51 @@
     <!-- Place this tag before closing body tag for github widget button. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
+
+    <!-- <h2>선택 날짜 Value 값으로 표기</h2>
+    <input type="text" id="dp00" class="" placeholder="탭이동입력형식: 2020-00-00" title="" /> -->
+    <script>
+	    $(function(){
+            // 웹접근성 달력
+            function setDatepicker(obj){
+                $.datepicker.setDefaults({
+                    dateFormat: "yy-mm-dd", // 날짜표기 형식 : yy년mm월dd일
+                    // yearSuffix: "년",
+                    changeYear: true, // 콤보박스에서 년 선택 가능
+                    changeMonth: true, // 콤보박스에서 월 선택 가능 
+                    nextText: '다음 달',
+                    prevText: '이전 달',
+                    dayNames: ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'],
+                    dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+                    monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                    monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                    showMonthAfterYear: true,// 상단 년, 월 설정
+                    minDate: '-0d',// 이전 날짜들은 선택막기 
+                    altField: "#" + obj + "",
+                    duration: "fast", // 달력 나타나는 속도, "slow", "normal", "fast"
+                    // 하단 설정
+                    showButtonPanel: true, // 비활성화
+                    currentText: '오늘 날짜',
+                    closeText: '닫기',
+                    // 버튼 설정
+                    showOn: "button",	// both, button, textField
+                    buttonImage: "../../Content/images/icon/calendar.png",
+                    buttonImageOnly: false,
+                    buttonText: '날짜 선택',
+                    onClose: function (selectedDate) {
+                        $("#" + obj + "").attr('value', selectedDate);
+                        $('.ui-datepicker-trigger').focus();
+                    }
+                });
+                $("#" + obj + "").datepicker().on('focus', function() {
+                    $('.ui-datepicker-year').attr('title', '년도 선택');
+                    $('.ui-datepicker-month').attr('title', '월 선택');
+                    $('.ui-datepicker').attr('tabindex', '0');
+                    $('.ui-datepicker').focus();
+                });
+            }
+            setDatepicker('dp00');
+        })
+	</script>
   </body>
 </html>

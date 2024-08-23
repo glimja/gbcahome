@@ -43,3 +43,44 @@ $( "#endDate" ).datepicker({
         }    
 
 });
+
+// 추가, 삭제 : input
+fn__inputAddRemove($("#specialField")); // 전문분야
+fn__inputAddRemove($("#localArea")); // 지역
+function fn__inputAddRemove(obj) {
+    let $target = obj;
+    let row = $target.children(".attr");
+    let $add = $target.find(".inputAdd")
+    let $remove = $target.find(".inputRemove");
+
+    function addRow() {
+        row.clone(true, true).appendTo($target);
+    }
+
+    function removeRow(button) {
+        button.closest(".attrWrap li.attr").remove();
+    }
+
+    $target.children('.attr:first-child').find('.inputRemove').hide();
+    $target.children('.attr').children("label").hide();
+
+    $add.on('click', function () {
+        addRow();  
+        if($target.children(".attr").length > 1) {
+            $(".inputRemove").show();
+        }
+    });
+    $remove.on('click', function () {
+        if($target.children(".attr").size() == 1) {
+            $remove.hide();
+        } else {
+            removeRow($(this));
+            
+            if($target.children(".attr").size() == 1) {
+                $remove.hide();
+            }
+            
+        }
+    });
+}
+
