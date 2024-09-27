@@ -890,7 +890,8 @@ caption {display: none}
 .organization_wrap .center_chart_wrap ul .bottom_chart>ul::after {display:block; clear:both; content:""; background-color: #999; width: 50%; padding: 0.1px; position: absolute; z-index: -9999; right: 14.8%; top: -32px;}
 
 .history .year {font-family:"Work Sans"; padding-top: 50px;font-size: 60px; font-weight: 900; letter-spacing: -2px;}
-.history .desc {font-size: 22px; font-weight: 600; letter-spacing: -1px;}
+.history .desc {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; font-size: 22px; font-weight: 600; letter-spacing: -1px;}
+.history .desc .month {display: block; min-width: 80px; padding: 0 10px; margin-bottom: 5px; font-size: 16px; border: 1px solid #192b7d; border-radius: 100px}
 .intro2imggap .intro2_txt {font-size: 40px; font-weight: 600; color: #fff; position: absolute; top: 50%; margin-top: -30px; left: 50%; margin-left: -310px;}
 .icon_size25 {width: 25px;}
 .img_photo1 {width: 100px; border-radius: 10px;}
@@ -933,3 +934,19 @@ caption {display: none}
 .dbinfoarea .accordion-item {border: 0; border-radius: 0; border-bottom: 1px solid #ccc;}
 .dbinfoarea .accordion-item:first-of-type {border-top: 2px solid #555;}
 /* .accordion-item:not(:first-of-type)  */
+
+/* 연혁 */
+#historyTab {display: flex; width: 100%;}
+#historyTab li {width: 170px; height: 48px; margin-right: 10px; margin-bottom: 10px; background: #FAFAFA; }
+#historyTab li a.nav-link {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-weight: 400; font-size: 18px; line-height: 28px; color: #737373;border: 0.1rem solid #DBDBDB; border-radius: 0.5rem;}
+#historyTab li a.nav-link.active {background: #192b7d; border: none; color: #fff;}
+/* 회원가입 순서 */
+.memberjoin {width: 100%; margin-bottom: 40px;}
+.memberjoin ul {display: flex;align-items: center;justify-content: center;}
+.memberjoin li {position: relative; padding-left: 85px;}
+.memberjoin li:first-child {padding: 0;}
+.memberjoin li:first-child::before {display: none;}
+.memberjoin li::before {content:''; display: block; width: 27px; height: 46px; background: url("../img/common/icon_statusarrow.png") 0 0 no-repeat; background-size: 100%; opacity: .2; position: absolute; top: 50%; left: 30px; margin-top: -23px;}
+.memberjoin li .step {position: absolute; top: 35px; left: 50%; margin-left: -24px; font-size: 13px; color: #e73728; letter-spacing: -1px;}
+.memberjoin li .done .step {color: #192b7d;}
+.memberjoin li .wait .step {color: #999;}

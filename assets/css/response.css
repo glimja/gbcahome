@@ -74,4 +74,14 @@
     .bizstatus li:first-child {padding: 0;}
     .bizstatus li:first-child::before {display: none;}
     .bizstatus li::before {content:''; display: block; width: 18px; position: absolute; top: 50%; left: 15px; margin-top: -15px;}
+    /* 회원가입 순서 */
+    .memberjoin {width: 100%;}
+    .memberjoin ul {display: flex;flex-wrap: wrap;}
+    .memberjoin li {position: relative; padding-left: 35px;}
+    .memberjoin li:first-child {padding: 0;}
+    .memberjoin li:first-child::before {display: none;}
+    .memberjoin li::before {content:''; display: block; width: 18px; position: absolute; top: 50%; left: 10px; margin-top: -15px;}
+    .memberjoin .statuscircle.ing,
+    .memberjoin .statuscircle {width: 106px; height: 106px; padding: 35px 10px; font-size: 18px}
+    .memberjoin li .step {top: 20px; font-size: 12px; margin-left: -20px;}
 }
