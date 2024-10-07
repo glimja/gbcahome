@@ -964,3 +964,7 @@ caption {display: none}
 .memberjoin li .step {position: absolute; top: 35px; left: 50%; margin-left: -24px; font-size: 13px; color: #e73728; letter-spacing: -1px;}
 .memberjoin li .done .step {color: #192b7d;}
 .memberjoin li .wait .step {color: #999;}
+
+.presswrap {}
+.press-tit {padding: 25px 30px; margin-bottom: 40px; border: 1px solid #555; border-radius: 5px; text-align: center; background: #eee}
+.press-desc {padding-bottom: 30px;}
