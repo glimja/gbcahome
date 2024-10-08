@@ -41,8 +41,8 @@
                                     <li class="dropdown">
                                         <a href="#none"><span>협회소식</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                         <ul>
-                                            <li><a href="회원자격및가입안내.html">회원자격 및 가입안내</a></li>
-                                            <li><a href="회원사가입안내.html">회원사 가입안내</a></li>
+                                            <li><a href="회원종류및자격.html">회원종류 및 자격</a></li>
+                                            <li><a href="회원가입안내.html">회원가입안내</a></li>
                                             <li><a href="공지사항.html">공지사항</a></li>
                                             <li><a href="보도자료.html">보도자료</a></li>
                                             <li><a href="포토뉴스.html">포토뉴스</a></li>
@@ -143,78 +143,100 @@
                     <!-- <div class="text-center sub_subjecttit pb10 aquablue pt-3 ">
                         “GBCA의 일원이 되어주세요”
                     </div> -->
-                    <table class="table table-sm tbllist">
-                        <caption>회원종류 및 자격</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">구분</th>
-                                <th scope="col">대상</th>
-                                <th scope="col">자격</th>
-                                <th scope="col">연회비</th>
-                                <th scope="col">의결권</th>
-                                <th scope="col">회원서비스</th>
-                                <th scope="col">유지기간</th>
-                                <th scope="col">사업참여</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>정회원</td>
-                                <td>개인</td>
-                                <td>GBC과정을 수료한 개인</td>
-                                <td>O</td>
-                                <td>O</td>
-                                <td>O</td>
-                                <td>1년</td>
-                                <td>O</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="4">명예회원</td>
-                                <td rowspan="2">개인</td>
-                                <td>협회 발전에 필요하다고 판단되는 개인</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>O</td>
-                                <td>2년</td>
-                                <td>일부제한</td>
-                            </tr>
-                            <tr>
-                                <td>또는 연 200만원이상 기부금을 납부하는 개인</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>O</td>
-                                <td>2년</td>
-                                <td>O</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">법인/단체</td>
-                                <td>협회 발전에 필요하다고 판단되는 법인 / 단체</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>O</td>
-                                <td>2년</td>
-                                <td>일부제한</td>
-                            </tr>
-                            <tr>
-                                <td>또는 연 500만원이상 기부금을 납부하는 법인 / 단체</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>O</td>
-                                <td>2년</td>
-                                <td>O</td>
-                            </tr>
-                            <tr>
-                                <td>준회원</td>
-                                <td>개인</td>
-                                <td>정회원 중 당해 연회비를 납부하지 않은 개인(2년 연속 회비 미납시 자동 탈회)</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>일부제한</td>
-                                <td>1년</td>
-                                <td>일부제한</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table table-sm tbllist type2">
+                            <caption>회원종류 및 자격</caption>
+                            <colgroup>
+                                <col style="width: 8%"/>
+                                <col style="width: 8%"/>
+                                <col style="width: auto"/>
+                                <col style="width: 8%"/>
+                                <col style="width: 8%"/>
+                                <col style="width: 10%"/>
+                                <col style="width: 10%"/>
+                                <col style="width: 10%"/>
+                            </colgroup>
+                            <!-- <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">대상</th>
+                                    <th scope="col">자격</th>
+                                    <th scope="col">연회비</th>
+                                    <th scope="col">의결권</th>
+                                    <th scope="col">회원서비스</th>
+                                    <th scope="col">유지기간</th>
+                                    <th scope="col">사업참여</th>
+                                </tr>
+                            </thead> -->
+                            <tbody>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">대상</th>
+                                    <th scope="col">자격</th>
+                                    <th scope="col">연회비</th>
+                                    <th scope="col">의결권</th>
+                                    <th scope="col">회원서비스</th>
+                                    <th scope="col">유지기간</th>
+                                    <th scope="col">사업참여</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">정회원</th>
+                                    <th scope="row">개인</th>
+                                    <td>GBC과정을 수료한 개인</td>
+                                    <td class="text-center">O</td>
+                                    <td class="text-center">O</td>
+                                    <td class="text-center">O</td>
+                                    <td class="text-center">1년</td>
+                                    <td class="text-center">O</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="4" scope="row">명예회원</th>
+                                    <th rowspan="2" scope="row">개인</th>
+                                    <td>협회 발전에 필요하다고 판단되는 개인</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">O</td>
+                                    <td class="text-center">2년</td>
+                                    <td class="text-center">일부제한</td>
+                                </tr>
+                                <tr>
+                                    <td>또는 연 200만원이상 기부금을 납부하는 개인</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">O</td>
+                                    <td class="text-center">2년</td>
+                                    <td class="text-center">O</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2" scope="row">법인/단체</th>
+                                    <td>협회 발전에 필요하다고 판단되는 법인 / 단체</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">O</td>
+                                    <td class="text-center">2년</td>
+                                    <td class="text-center">일부제한</td>
+                                </tr>
+                                <tr>
+                                    <td>또는 연 500만원이상 기부금을 납부하는 법인 / 단체</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">O</td>
+                                    <td class="text-center">2년</td>
+                                    <td class="text-center">O</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">준회원</th>
+                                    <th scope="row">개인</th>
+                                    <td>정회원 중 당해 연회비를 납부하지 않은 개인(2년 연속 회비 미납시 자동 탈회)</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">X</td>
+                                    <td class="text-center">일부제한</td>
+                                    <td class="text-center">1년</td>
+                                    <td class="text-center">일부제한</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <ul>
                         <li>※ 연회비: 15만원</li>
                         <li>※ 회비: 2024년에 가입한 회원은 입회비를 면제하며, 연회비만 납부(2025년 가입시 입회비: 5만원, 연회비: 15만원)</li>
@@ -243,8 +265,8 @@
                     <div class="col-lg-2 col-6 footer-links">
                         <h4>협회소식</h4>
                         <ul>
-                          <li><a href="회원자격및가입안내.html">회원자격 및 가입안내</a></li>
-                          <li><a href="회원사가입안내.html">회원사 가입안내</a></li>
+                          <li><a href="회원종류및자격.html">회원종류 및 자격</a></li>
+                          <li><a href="회원가입안내.html">회원가입안내</a></li>
                           <li><a href="공지사항.html">공지사항</a></li>
                           <li><a href="보도자료.html">보도자료</a></li>
                           <li><a href="포토뉴스.html">포토뉴스</a></li>
