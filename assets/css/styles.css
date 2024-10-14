@@ -643,7 +643,7 @@ sky: #33bac5
 .faq-txtq, 
 .faq-txta {padding-right: 8px;font-size: 2.2rem}
 .faq-txtq {color: #ccc}
-.faq-txtq.type1 {font-size: 18px; color: #fff; background-color: #192b7d; padding: 2px 7px; margin-right: 5px; border-radius: 50%;}
+.faq-txtq.type1 {display: inline-block; width:40px; height: 40px; line-height:35px; text-align: center; font-size: 18px; color: #fff; background-color: #192b7d; padding: 2px 7px; margin-right: 5px; border-radius: 50%;}
 .accordion-button:not(.collapsed) .faq-txtq {color: #192b7d}
 .accordion-button:not(.collapsed) .accordion-button::after {color: #fff}
 .faq-txta {color: #e73728}
@@ -819,6 +819,7 @@ caption {display: none}
 .contenttab .nav-tabs .nav-item.show .nav-link, .contenttab .nav-tabs .nav-link.active {background: #fc7e74; color: #fff; border: 0; border-top-left-radius: 0; border-top-right-radius: 0;}
 .contenttab .nav-tabs .nav-link {}
 .pic_ceo {}
+.pic_ceo img {border-radius: 40px;}
 .greeting {letter-spacing: -1px;}
 .greeting .ceoname {padding-left: 5px;font-size: 22px;}
 .sub_txt1 {}
