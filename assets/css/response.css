@@ -93,4 +93,20 @@
     .bizdirection .box {height: auto; padding: 20px; line-height: 50px; word-break: keep-all}
     .bizdirection .box4.type2 .txt {width: 100%}
     .bizdirection .box4.type3 ul {width: 100%; height: auto;}
+
+    .intro_list li .tit {display: inline-block; width: 45px}
+
+    .desc-box {
+        flex-direction: column;
+    }
+    .desc-box > ul {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .desc-box-list > span {
+        width: 80px;
+    }
+    .desc-box-list > p {
+        flex: 1;
+    }
 }

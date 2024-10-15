@@ -987,8 +987,8 @@ caption {display: none}
 .bizdirection .box {border-radius: 20px; height: 90px; padding:0 20px; line-height: 90px; text-align: center;}
 .bizdirection .box .txt {color:#fff; font-size: 18px; font-weight: bold;}
 .bizdirection .box.type1 .txt {font-size: 22px}
-.bizdirection .box.type1 {background: #192b7d}
-.bizdirection .box.type2 {background: #e73728}
+.bizdirection .box.type1 {background: #7388ed}
+.bizdirection .box.type2 {background: #f1877e}
 .bizdirection .box4 {}
 .bizdirection .box4 .row li {text-align: -webkit-center;}
 .bizdirection .box4.type1 .txt {display: block; width: 200px; padding: 80px 10px; margin: 10px 0; font-size: 20px; font-weight: bold; border-radius: 100px; border: 5px solid #aaa; background: #fff; vertical-align: middle;}
@@ -1010,3 +1010,48 @@ caption {display: none}
 .bizdirection .box4.type3 .row div {text-align: -webkit-center;}
 .bizdirection .box4.type3 .num {position: absolute; left:0; color: #33bac5; font-weight: bold;}
 .bizdirection .box4.type3 li {position: relative; padding-left: 30px;}
+
+.intro_list {}
+.intro_list li .row {display: flex;flex-wrap: nowrap;}
+.intro_list li .tit {display: inline-block; width: 45px}
+.w50p {width: 50px}
+.w150p {width: 150px}
+.w250p {width: 250px}
+.desc-box {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #FAFAFA;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+}
+.desc-box > ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.desc-box-list {
+  position: relative;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.desc-box-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #222;
+}
+.desc-box-list > span {
+  font-weight: 500;
+  color: #333;
+}
+.desc-box-list > p {
+  margin-left: 10px;
+  margin-bottom: 0;
+  color: #555;
+}
