@@ -236,6 +236,9 @@ function fn__inputAddRemove(obj) {
         addRow();  
         if($target.children(".attr").length > 1) {
             $(".inputRemove").show();
+            $('.inputAdd').hide();
+            $target.children('.attr:first-child').find('.inputRemove').hide();
+            $target.children('.attr:first-child').find('.inputAdd').show();
         }
     });
     $remove.on('click', function () {
@@ -243,12 +246,25 @@ function fn__inputAddRemove(obj) {
             $remove.hide();
         } else {
             removeRow($(this));
-            
-            if($target.children(".attr").size() == 1) {
-                $remove.hide();
-            }
-            
+            $target.children('.attr:first-child').find('.inputRemove').hide();
         }
     });
 }
 
+// 회원가입2 경력관련 체크
+function radioDisabledChk() {
+    let $target = $('.careerinfo');
+
+    $target.find(".col").each(function () {
+        $(this).find(".disableChk input:radio").on('change', function() {
+            if ($(this).val() == "Disable") {
+                $(this).parent().siblings(".text-try").attr('disabled', true);
+                $(this).parent().parent().siblings().find(".text-try").attr('disabled', true);
+            }
+            else {
+                $(this).parent().siblings(".text-try").attr('disabled', false);
+                $(this).parent().parent().siblings().find(".text-try").attr('disabled', false);
+            }
+        });
+    })
+}
