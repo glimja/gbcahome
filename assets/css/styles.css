@@ -1110,3 +1110,5 @@ button.btntype {
 .mypagehome .iconbox {position: absolute; top:50%; right:30px; width: 100px; height: 100px; margin-top: -50px; border-radius: 100%; border: 1px solid #eee; background: #fff}
 .mypagehome .iconbox .icon_mymemclass {display: inline-block; width: 70px; height: 70px; background: url("../img/common/icon_mymemclass.png") 0 0 no-repeat; background-size: 100%; position: absolute; top: 14px; right: 14px;}
 .mypagehome .iconbox .icon_mymemclassfee {display: inline-block; width: 70px; height: 70px; background: url("../img/common/icon_mymemclassfee.png") 0 0 no-repeat; background-size: 100%; position: absolute; top: 14px; right: 14px;}
+
+.careerinfo .d-flex {flex-wrap: wrap;}
