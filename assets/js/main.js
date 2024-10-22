@@ -257,7 +257,7 @@ function radioDisabledChk() {
 
     $target.find(".col").each(function () {
         $(this).find(".disableChk input:radio").on('change', function() {
-            if ($(this).val() == "Disable") {
+            if ($(this).val() == "N") {
                 $(this).parent().siblings(".text-try").attr('disabled', true);
                 $(this).parent().parent().siblings().find(".text-try").attr('disabled', true);
             }
