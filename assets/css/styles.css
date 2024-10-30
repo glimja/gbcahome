@@ -1112,3 +1112,12 @@ button.btntype {
 .mypagehome .iconbox .icon_mymemclassfee {display: inline-block; width: 70px; height: 70px; background: url("../img/common/icon_mymemclassfee.png") 0 0 no-repeat; background-size: 100%; position: absolute; top: 14px; right: 14px;}
 
 .careerinfo .d-flex {flex-wrap: wrap;}
+.wrapinfoline {padding: 20px 15px; margin: 15px 0; background-color: #fff; border-radius: 15px; border: 1px solid #666} 
+.wrapinfogray {padding: 10px 0px; margin: 15px 0; background-color: #eee; border-radius: 15px;}
+.infotype1 {display: flex; flex-wrap: wrap; width: 100%; margin: 0;}
+.infotype1 .tit {width: 70px; color: #555}
+.infotype1 .desc {width: 70%;}
+.wrapinfogray .infotype1 .tit {width: 90px;}
+.popbodyhead {padding-bottom: 10px; text-align: center; letter-spacing: -1px; word-break: keep-all;}
+.popbodydesc {position: relative; display: block; padding-left: 22px; letter-spacing: -1px; word-break: keep-all;}
+.popbodydesc:before {content:'※'; display: block; position: absolute; left: 2px;}
