@@ -1138,3 +1138,4 @@ button.btntype {
   border: 4px solid #235dab;
   border-radius: 30px;
 }
+.mainpopinfo .modal-dialog-scrollable .modal-content h1 img {width: 65px; padding: 0 2px 5px 0;}
