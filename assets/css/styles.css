@@ -1122,8 +1122,8 @@ button.btntype {
 .mypagehome .iconbox .icon_mymemclassfee {display: inline-block; width: 70px; height: 70px; background: url("../img/common/icon_mymemclassfee.png") 0 0 no-repeat; background-size: 100%; position: absolute; top: 14px; right: 14px;}
 
 .careerinfo .d-flex {flex-wrap: wrap;}
-.wrapinfoline {padding: 20px 15px; margin: 15px 0; background-color: #fff; border-radius: 15px; border: 1px solid #235dab} 
-.wrapinfogray {padding: 10px 0px; margin: 15px 0; background-color: #dae9ff; border-radius: 15px;}
+.wrapinfoline {padding: 20px 15px; margin: 15px 0; background-color: #fff; border-radius: 15px; border: 1px solid #235dab; opacity: .9;} 
+.wrapinfogray {padding: 10px 0px; margin: 15px 0; background-color: #e7f1ff; border-radius: 15px; opacity: .9;}
 .infotype1 {display: flex; flex-wrap: wrap; width: 100%; margin: 0;}
 .infotype1 .tit {width: 70px; color: #555}
 .infotype1 .desc {width: 70%;}
@@ -1134,7 +1134,7 @@ button.btntype {
 .mainpopinfo .modal-dialog-scrollable .modal-content {
   max-height: 100%;
   overflow: hidden;
-  background: #fff4f0;
+  background: #fff4f0 url('../img/common/pop_bg1.jpg') 0 0;
   border: 4px solid #235dab;
   border-radius: 30px;
 }
