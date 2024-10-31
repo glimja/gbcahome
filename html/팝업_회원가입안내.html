@@ -136,16 +136,16 @@
                             office@gbca.or.kr
                      -->
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade mainpopinfo" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">회원가입 안내</h1>
+                                <div class="modal-header border-0 align-items-center">
+                                    <h1 class="modal-title font25" id="exampleModalLabel">정회원이 되어주세요 !!!</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="popbodyhead txtcolor5 font23 pt-3">
-                                        우리 협회의 '<strong>정회원</strong>'으로 가입하시려면, 회원가입 신청과 함께 연회비를 입금해 주셔야 합니다.
+                                    <div class="popbodyhead txtcolor5 font33 pt-2 pb-3">
+                                        '<strong>정회원</strong>'으로 가입하시려면, 회원가입 신청과 함께 연회비를 입금해 주셔야 합니다.
                                     </div>
                                     <div class="wrapinfoline font16">
                                         <dl class="infotype1">
@@ -157,7 +157,7 @@
                                             <dd class="desc"><strong>신한은행</strong> <strong class="font18">140-014-520500</strong><br />(예금주 사단법인 글로벌비즈니스컨설팅협회)</dd>
                                         </dl>
                                     </div>
-                                    <p class="popbodydesc">정회원이 되시면 협회에서 제공하는 다양한 서비스 혜택을 받으실 수 있습니다.</p>
+                                    <p class="popbodydesc font20 txtcolor5">정회원이 되시면 협회에서 제공하는 다양한 서비스 혜택을 받으실 수 있습니다.</p>
                                     <div class="wrapinfogray font16 mt-3">
                                         <dl class="infotype1">
                                             <dt class="tit ps-3">&middot; 문&nbsp;&nbsp;&nbsp;의</dt>
@@ -171,8 +171,11 @@
                                         </dl>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <div class="modal-footer border-0">
+                                    <label>
+                                        <input type="checkbox" onclick="setPopupCookie(this)"> 오늘 하루 보지 않기
+                                    </label>
+                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button> -->
                                 </div>
                             </div>
                         </div>
